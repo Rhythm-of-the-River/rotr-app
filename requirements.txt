@@ -1,4 +1,4 @@
 firebase-admin==6.9.0
 pytz==2025.2
 
-reflex==0.8.2
+reflex==0.8.16
