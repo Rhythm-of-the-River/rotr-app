@@ -26,7 +26,7 @@ import type { Announcement } from '@/types';
 
 export default function FloydPage() {
   const { user, loading: authLoading, signIn, logOut } = useAuth();
-  const { isMember, loading: memberLoading } = useCommitteeMember(user?.uid);
+  const { isMember, name, loading: memberLoading } = useCommitteeMember(user?.uid);
 
   if (authLoading) return <div className="text-river-300">Loading…</div>;
 
@@ -63,7 +63,7 @@ export default function FloydPage() {
 
       {user && isMember && (
         <>
-          <PostForm email={user.email ?? ''} onLogOut={logOut} />
+          <PostForm email={user.email ?? ''} name={name} onLogOut={logOut} />
           <ManageAnnouncements />
         </>
       )}
@@ -127,7 +127,15 @@ function SignInForm({
   );
 }
 
-function PostForm({ email, onLogOut }: { email: string; onLogOut: () => void }) {
+function PostForm({
+  email,
+  name,
+  onLogOut
+}: {
+  email: string;
+  name: string | null;
+  onLogOut: () => void;
+}) {
   const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
   const [busy, setBusy] = useState(false);
@@ -147,6 +155,7 @@ function PostForm({ email, onLogOut }: { email: string; onLogOut: () => void }) 
         subject: subject.trim(),
         message: message.trim(),
         user: email,
+        name: name ?? '',
         createdAt: serverTimestamp()
       });
       setSubject('');
@@ -281,7 +290,7 @@ function ViewRow({
             {announcement.subject}
           </h3>
           <p className="text-xs text-river-400">
-            {formatClock(announcement.time)} · {announcement.user}
+            {formatClock(announcement.time)} · {announcement.name || announcement.user}
           </p>
         </div>
         <div className="flex shrink-0 gap-2">

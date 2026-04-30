@@ -5,6 +5,7 @@ import type { Announcement } from '@/types';
 
 interface AnnouncementDoc {
   user?: string;
+  name?: string;
   subject?: string;
   message?: string;
 }
@@ -25,13 +26,19 @@ export function useAnnouncements(): {
       (snap) => {
         const list: Announcement[] = snap.docs.map((doc) => {
           const data = doc.data() as AnnouncementDoc & { time?: number };
-          // Doc IDs are stored as the post timestamp (epoch seconds).
-          const timeFromId = parseInt(doc.id, 10);
-          const time = Number.isFinite(timeFromId) ? timeFromId : data.time ?? 0;
+          // Legacy posts used the epoch-seconds timestamp as the doc ID.
+          // New posts (addDoc) get a random alphanumeric ID, in which case
+          // we must read `time` from the doc body. Only treat the ID as a
+          // timestamp when it's entirely digits.
+          const idIsNumeric = /^\d+$/.test(doc.id);
+          const time = idIsNumeric
+            ? parseInt(doc.id, 10)
+            : data.time ?? 0;
           return {
             id: doc.id,
             time,
             user: data.user ?? '',
+            name: data.name,
             subject: data.subject ?? '',
             message: data.message ?? ''
           };

@@ -7,6 +7,7 @@ import BarPage from './pages/BarPage';
 import ArtPage from './pages/ArtPage';
 import AnnouncementsPage from './pages/AnnouncementsPage';
 import FloydPage from './pages/FloydPage';
+import PrivacyPage from './pages/PrivacyPage';
 import NotFoundPage from './pages/NotFoundPage';
 
 export const router = createBrowserRouter([
@@ -20,6 +21,7 @@ export const router = createBrowserRouter([
       { path: '/art', element: <ArtPage /> },
       { path: '/announcements', element: <AnnouncementsPage /> },
       { path: '/floyd', element: <FloydPage /> },
+      { path: '/privacy', element: <PrivacyPage /> },
       { path: '*', element: <NotFoundPage /> }
     ]
   }

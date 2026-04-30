@@ -3,16 +3,20 @@ import { Bell, BellOff } from 'lucide-react';
 import {
   disableNotifications,
   enableNotifications,
-  getNotificationStatus,
-  type NotificationStatus
+  getNotificationUiStatus,
+  NOTIFICATION_STATE_EVENT,
+  type NotificationUiStatus
 } from '@/utils/notifications';
 
 export default function NotificationToggle() {
-  const [status, setStatus] = useState<NotificationStatus>('default');
+  const [status, setStatus] = useState<NotificationUiStatus>('off');
   const [busy, setBusy] = useState(false);
 
   useEffect(() => {
-    setStatus(getNotificationStatus());
+    const update = () => setStatus(getNotificationUiStatus());
+    update();
+    window.addEventListener(NOTIFICATION_STATE_EVENT, update);
+    return () => window.removeEventListener(NOTIFICATION_STATE_EVENT, update);
   }, []);
 
   if (status === 'unsupported') return null;
@@ -20,9 +24,9 @@ export default function NotificationToggle() {
   const onClick = async () => {
     setBusy(true);
     try {
-      if (status === 'granted') {
+      if (status === 'on') {
         await disableNotifications();
-        setStatus('default');
+        setStatus('off');
       } else {
         const next = await enableNotifications();
         setStatus(next);
@@ -44,8 +48,8 @@ export default function NotificationToggle() {
           : 'Toggle festival notifications'
       }
     >
-      {status === 'granted' ? <Bell size={16} /> : <BellOff size={16} />}
-      {status === 'granted' ? 'Notifications on' : 'Enable notifications'}
+      {status === 'on' ? <Bell size={16} /> : <BellOff size={16} />}
+      {status === 'on' ? 'Notifications on' : 'Enable notifications'}
     </button>
   );
 }

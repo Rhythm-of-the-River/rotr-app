@@ -52,5 +52,3 @@ export const NAV_LINKS: NavLink[] = [
   }
 ];
 
-export const PRIVACY_URL =
-  'https://storage.googleapis.com/rotr-app-assets/privacy.html';

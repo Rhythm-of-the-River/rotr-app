@@ -1,78 +1,120 @@
-import { getToken, onMessage } from 'firebase/messaging';
+import { getToken, onMessage, deleteToken } from 'firebase/messaging';
 import { getFunctions, httpsCallable } from 'firebase/functions';
 import { FCM_VAPID_KEY, firebaseApp, getMessagingIfSupported } from '@/firebase';
 
-const TOKEN_STORAGE_KEY = 'rotr.fcmToken';
+const ENABLED_KEY = 'rotr.notificationsEnabled';
+const TOKEN_KEY = 'rotr.fcmToken';
 const REGION = 'us-central1';
 
-export type NotificationStatus = 'unsupported' | 'denied' | 'granted' | 'default';
+export const NOTIFICATION_STATE_EVENT = 'rotr:notification-state-changed';
 
-interface SubscribeArgs {
-  token: string;
-  subscribe: boolean;
+export type NotificationUiStatus = 'unsupported' | 'denied' | 'on' | 'off';
+
+function emit() {
+  if (typeof window !== 'undefined') {
+    window.dispatchEvent(new Event(NOTIFICATION_STATE_EVENT));
+  }
 }
 
-interface SubscribeResult {
-  ok: boolean;
-  subscribed: boolean;
+function isSupported(): boolean {
+  return typeof Notification !== 'undefined' && 'serviceWorker' in navigator;
 }
 
-function callSubscription(args: SubscribeArgs) {
-  const fns = getFunctions(firebaseApp, REGION);
-  return httpsCallable<SubscribeArgs, SubscribeResult>(
-    fns,
-    'manageAnnouncementSubscription'
-  )(args);
-}
-
-export function getNotificationStatus(): NotificationStatus {
-  if (typeof Notification === 'undefined') return 'unsupported';
-  return Notification.permission as NotificationStatus;
+export function getNotificationUiStatus(): NotificationUiStatus {
+  if (!isSupported()) return 'unsupported';
+  if (Notification.permission === 'denied') return 'denied';
+  return localStorage.getItem(ENABLED_KEY) === '1' ? 'on' : 'off';
 }
 
 /**
- * Request notification permission, register the FCM service worker, get a
- * device token, and subscribe it to the announcements topic.
+ * True if the browser has never been asked for permission. Used to decide
+ * whether to show the first-visit prompt.
  */
-export async function enableNotifications(): Promise<NotificationStatus> {
-  if (typeof Notification === 'undefined') return 'unsupported';
-  const messaging = await getMessagingIfSupported();
-  if (!messaging) return 'unsupported';
+export function shouldShowFirstVisitPrompt(): boolean {
+  if (!isSupported()) return false;
+  if (Notification.permission !== 'default') return false;
+  return localStorage.getItem(ENABLED_KEY) === null;
+}
+
+function callSubscription(token: string, subscribe: boolean) {
+  const fns = getFunctions(firebaseApp, REGION);
+  return httpsCallable<{ token: string; subscribe: boolean }, { ok: boolean }>(
+    fns,
+    'manageAnnouncementSubscription'
+  )({ token, subscribe });
+}
+
+export async function enableNotifications(): Promise<NotificationUiStatus> {
+  if (!isSupported()) return 'unsupported';
 
   const permission = await Notification.requestPermission();
-  if (permission !== 'granted') return permission as NotificationStatus;
-
-  const swRegistration = await navigator.serviceWorker.register(
-    '/firebase-messaging-sw.js'
-  );
-  const token = await getToken(messaging, {
-    vapidKey: FCM_VAPID_KEY,
-    serviceWorkerRegistration: swRegistration
-  });
-
-  if (token) {
-    localStorage.setItem(TOKEN_STORAGE_KEY, token);
-    await callSubscription({ token, subscribe: true });
+  if (permission === 'denied') {
+    localStorage.setItem(ENABLED_KEY, '0');
+    emit();
+    return 'denied';
+  }
+  if (permission !== 'granted') {
+    // 'default' = user dismissed without choosing. Treat as off.
+    emit();
+    return 'off';
   }
 
-  // Foreground message handler -> show a native notification.
-  onMessage(messaging, (payload) => {
-    const title = payload.notification?.title ?? 'Rhythm of the River';
-    const body = payload.notification?.body ?? '';
-    new Notification(title, { body, icon: '/favicon.ico' });
-  });
+  // Mark enabled immediately so the UI is responsive even if the backend
+  // round-trip fails or is slow.
+  localStorage.setItem(ENABLED_KEY, '1');
+  emit();
 
-  return 'granted';
+  try {
+    const messaging = await getMessagingIfSupported();
+    if (!messaging) return 'on';
+
+    const swRegistration = await navigator.serviceWorker.register(
+      '/firebase-messaging-sw.js'
+    );
+    const token = await getToken(messaging, {
+      vapidKey: FCM_VAPID_KEY,
+      serviceWorkerRegistration: swRegistration
+    });
+    if (token) {
+      localStorage.setItem(TOKEN_KEY, token);
+      try {
+        await callSubscription(token, true);
+      } catch {
+        // Backend may be offline / not deployed yet. Subscription will be
+        // retried next time the user toggles or visits.
+      }
+    }
+
+    onMessage(messaging, (payload) => {
+      const title = payload.notification?.title ?? 'Rhythm of the River';
+      const body = payload.notification?.body ?? '';
+      new Notification(title, { body, icon: '/favicon.svg' });
+    });
+  } catch {
+    // Token / SW failures don't change the user-facing on/off state.
+  }
+
+  return 'on';
 }
 
 export async function disableNotifications(): Promise<void> {
-  const token = localStorage.getItem(TOKEN_STORAGE_KEY);
+  localStorage.setItem(ENABLED_KEY, '0');
+  emit();
+
+  const token = localStorage.getItem(TOKEN_KEY);
+  localStorage.removeItem(TOKEN_KEY);
+
   if (token) {
     try {
-      await callSubscription({ token, subscribe: false });
+      await callSubscription(token, false);
     } catch {
-      /* ignore - server may be offline; topic sub will go stale on its own */
+      /* best effort */
     }
-    localStorage.removeItem(TOKEN_STORAGE_KEY);
+  }
+  try {
+    const messaging = await getMessagingIfSupported();
+    if (messaging) await deleteToken(messaging);
+  } catch {
+    /* best effort */
   }
 }

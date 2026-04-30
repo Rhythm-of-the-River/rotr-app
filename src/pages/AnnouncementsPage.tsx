@@ -73,9 +73,9 @@ function AnnouncementCard({ announcement }: { announcement: Announcement }) {
           </p>
         ))}
       </div>
-      {announcement.user && (
+      {(announcement.name || announcement.user) && (
         <footer className="mt-2 text-right text-sm text-river-300">
-          — {announcement.user}
+          — {announcement.name || announcement.user}
         </footer>
       )}
     </article>

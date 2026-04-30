@@ -75,6 +75,7 @@ export interface Announcement {
   id: string;
   time: number;
   user: string;
+  name?: string;
   subject: string;
   message: string;
 }
