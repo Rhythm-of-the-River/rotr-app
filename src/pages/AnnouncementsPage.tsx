@@ -12,9 +12,9 @@ export default function AnnouncementsPage() {
 
   useEffect(() => {
     if (announcements.length > 0) {
-      localStorage.setItem(READ_KEY, String(announcements[0].time));
-      // Trigger same-tab listeners.
-      window.dispatchEvent(new StorageEvent('storage', { key: READ_KEY }));
+      const value = String(announcements[0].time);
+      localStorage.setItem(READ_KEY, value);
+      window.dispatchEvent(new StorageEvent('storage', { key: READ_KEY, newValue: value }));
     }
   }, [announcements]);
 

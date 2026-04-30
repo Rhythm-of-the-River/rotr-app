@@ -60,15 +60,14 @@ export const onNewAnnouncement = onDocumentCreated(
 
     await getMessaging().send({
       topic: ANNOUNCEMENTS_TOPIC,
-      notification: { title, body },
+      data: {
+        title,
+        body,
+        link: '/announcements'
+      },
       webpush: {
-        notification: {
-          icon: '/favicon.svg',
-          badge: '/favicon.svg'
-        },
-        fcmOptions: {
-          link: '/announcements'
-        }
+        headers: { Urgency: 'high' },
+        fcmOptions: { link: '/announcements' }
       }
     });
 

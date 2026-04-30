@@ -86,9 +86,18 @@ export async function enableNotifications(): Promise<NotificationUiStatus> {
     }
 
     onMessage(messaging, (payload) => {
-      const title = payload.notification?.title ?? 'Rhythm of the River';
-      const body = payload.notification?.body ?? '';
-      new Notification(title, { body, icon: '/favicon.svg' });
+      const data = payload.data ?? {};
+      const title = data.title || 'Rhythm of the River';
+      const body = data.body || '';
+      const link = data.link || '/announcements';
+      swRegistration.showNotification(title, {
+        body,
+        icon: '/favicon.svg',
+        badge: '/favicon.svg',
+        tag: 'rotr-announcement',
+        renotify: true,
+        data: { click_action: link }
+      });
     });
   } catch {
     // Token / SW failures don't change the user-facing on/off state.

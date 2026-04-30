@@ -18,13 +18,17 @@ firebase.initializeApp({
 const messaging = firebase.messaging();
 
 messaging.onBackgroundMessage((payload) => {
-  const title = (payload.notification && payload.notification.title) || 'Rhythm of the River';
-  const body = (payload.notification && payload.notification.body) || '';
+  const data = payload.data || {};
+  const title = data.title || 'Rhythm of the River';
+  const body = data.body || '';
+  const link = data.link || '/announcements';
   self.registration.showNotification(title, {
     body,
     icon: '/favicon.svg',
     badge: '/favicon.svg',
-    data: { click_action: '/announcements' }
+    tag: 'rotr-announcement',
+    renotify: true,
+    data: { click_action: link }
   });
 });
 
