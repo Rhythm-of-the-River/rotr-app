@@ -1,11 +1,14 @@
-.web
-.states
-*.db
-*.py[cod]
-.states/
-.env/
+node_modules/
+dist/
+.env
+.env.local
+*.log
+.DS_Store
 .vscode/
-__pycache__/
-assets/external/
-backend.zip
-frontend.zip
+.firebase/
+
+# TS / Vite build artifacts
+*.tsbuildinfo
+vite.config.d.ts
+vite.config.js
+functions/lib/

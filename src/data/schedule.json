@@ -1,0 +1,203 @@
+{
+  "friday": [
+    {
+      "name": "Nikki & Rich",
+      "day": "F",
+      "time": "5:00pm - 6:00pm",
+      "stage": "Main",
+      "bio": "Nikki & Rich are a husband-and-wife acoustic duo from the Upper Midwest, blending warm vocal harmonies with thoughtful folk and Americana songwriting. Their stripped-down sets put the focus on melody and story, making them a natural fit for opening Friday night under the river bluffs."
+    },
+    {
+      "name": "Clint Riedel",
+      "day": "F",
+      "time": "6:00pm - 6:30pm",
+      "stage": "Church",
+      "bio": "Clint Riedel is a singer-songwriter rooted in the heartland tradition, weaving acoustic ballads about the people and places he calls home. Expect warm guitar work, plain-spoken lyrics, and a quiet confidence well-suited to the intimacy of the Church Stage."
+    },
+    {
+      "name": "Mikkel & Mike",
+      "day": "F",
+      "time": "6:30pm - 7:30pm",
+      "stage": "Main",
+      "bio": "Mikkel & Mike pair tight vocal harmonies with a roots-rock backbone, drawing from folk, country, and a little blues. The duo's chemistry on stage and easy rapport with audiences make them a regional festival favorite."
+    },
+    {
+      "name": "Matt Fockler",
+      "day": "F",
+      "time": "7:30pm - 8:00pm",
+      "stage": "Church",
+      "bio": "Matt Fockler is a Midwestern singer-songwriter known for honest lyrics and a warm baritone. His acoustic sets balance reflective originals with the occasional well-chosen cover, perfect for a sunset stop at the Church Stage."
+    },
+    {
+      "name": "Chicago Farmer & The Fieldnotes",
+      "day": "F",
+      "time": "8:00pm - 9:15pm",
+      "stage": "Main",
+      "bio": "Chicago Farmer (Cody Diekhoff) is a small-town troubadour with a big-city work ethic, telling stories of factory workers, farmers, and forgotten Midwestern main streets. Backed by The Fieldnotes, his songs land somewhere between John Prine, Steve Earle, and the bar at the end of your block — equal parts heart, humor, and grit.",
+      "web": "https://www.chicagofarmer.com/",
+      "fb": "https://www.facebook.com/chicagofarmer/",
+      "insta": "https://www.instagram.com/chicagofarmer/",
+      "spotify": "https://open.spotify.com/artist/2v3SqI0xwDBYeMLU76indM",
+      "yt": "https://www.youtube.com/@chicagofarmer"
+    },
+    {
+      "name": "Life in Progress",
+      "day": "F",
+      "time": "9:15pm - 9:45pm",
+      "stage": "Church",
+      "bio": "Life in Progress is a Minnesota duo composed of Mike & Bailey Hobbs from Dunnell, blending uplifting harmonies with acoustic guitar and ukulele. They host an annual music festival on their farm called Cornstalk Convergence.",
+      "web": "https://cornstalkconvergence.com/",
+      "fb": "https://www.facebook.com/profile.php?id=100063881920787",
+      "insta": "https://www.instagram.com/cornstalkconvergence"
+    },
+    {
+      "name": "Saltydog",
+      "day": "F",
+      "time": "9:45pm - 11:00pm",
+      "stage": "Main",
+      "bio": "Saltydog is a high-energy funk jam band based in Duluth, Minnesota. Known for their lively improvisations and infectious grooves, they create a dynamic blend of funk, rock, and soul. They closed Friday night for ROTR before — and they're back to do it again.",
+      "web": "https://saltydogduluth.band/",
+      "fb": "https://www.facebook.com/saltydog.duluth",
+      "insta": "https://www.instagram.com/saltydog.duluth/",
+      "spotify": "https://open.spotify.com/artist/5u7Gz7FFd3fhhN4pk7817j",
+      "apple": "https://music.apple.com/us/artist/saltydog/1727475802",
+      "yt": "https://www.youtube.com/channel/UC1hWJOLqGgTS3zOX8Eqz5vw"
+    }
+  ],
+  "saturday": [
+    {
+      "name": "Open Mic",
+      "day": "S",
+      "time": "11:15am - 11:45am",
+      "stage": "Church",
+      "bio": "Saturday morning open mic at the Church Stage. Bring an instrument, sign up at the stage, and share a song or two before the main schedule kicks off."
+    },
+    {
+      "name": "City Mouse",
+      "day": "S",
+      "time": "11:45am - 12:45pm",
+      "stage": "Main",
+      "bio": "City Mouse is a roots and Americana act with bright vocal harmonies, fingerpicked guitar, and songwriting that feels equally at home in a coffeehouse or on a festival stage. A great way to ease into the Saturday lineup."
+    },
+    {
+      "name": "Tucker Buchan",
+      "day": "S",
+      "time": "12:45pm - 1:15pm",
+      "stage": "Church",
+      "bio": "Tucker Buchan is a singer-songwriter and multi-instrumentalist whose acoustic sets lean into thoughtful lyrics and gentle, dynamic playing. Catch him for a quiet moment between Main Stage acts."
+    },
+    {
+      "name": "The Weary Ramblers",
+      "day": "S",
+      "time": "1:15pm - 2:00pm",
+      "stage": "Main",
+      "bio": "The Weary Ramblers play heartfelt Americana drawn from old-time, folk, and country traditions. Tight harmonies, fiddle, and acoustic guitar drive a sound that feels like a long walk along the river — exactly the way an early Saturday afternoon should feel."
+    },
+    {
+      "name": "Clint Riedel",
+      "day": "S",
+      "time": "2:00pm - 2:30pm",
+      "stage": "Church",
+      "bio": "Clint Riedel returns to the Church Stage with another short solo acoustic set of original songs and warm storytelling."
+    },
+    {
+      "name": "Teague Alexy & The Common Thread",
+      "day": "S",
+      "time": "2:30pm - 3:15pm",
+      "stage": "Main",
+      "bio": "Duluth songwriter Teague Alexy has spent decades writing songs that thread together folk, rock, and Americana with a poet's ear for detail. Backed by The Common Thread, his sets balance road-tested storytelling with the easygoing groove of a band that has clearly logged a lot of miles together.",
+      "web": "https://www.teaguealexy.com/",
+      "fb": "https://www.facebook.com/teaguealexymusic/",
+      "insta": "https://www.instagram.com/teaguealexy/",
+      "spotify": "https://open.spotify.com/artist/2vfn9bAY7c1H2rBLRmKaUe"
+    },
+    {
+      "name": "Gallimaufry",
+      "day": "S",
+      "time": "3:15pm - 3:45pm",
+      "stage": "Church",
+      "bio": "Gallimaufry — literally \"a hodgepodge\" — lives up to the name with a set that pulls from folk, jazz, world music, and original songwriting. A welcome left turn in the middle of the Saturday schedule."
+    },
+    {
+      "name": "Good Morning Bedlam",
+      "day": "S",
+      "time": "3:45pm - 4:30pm",
+      "stage": "Main",
+      "bio": "Good Morning Bedlam is a Minneapolis-based folk band built around stomp-along rhythms, four-part harmonies, and unmistakably Midwestern songwriting. Their live shows are joyful, sweaty, and pretty hard not to dance to.",
+      "web": "https://www.goodmorningbedlam.com/",
+      "fb": "https://www.facebook.com/goodmorningbedlam",
+      "insta": "https://www.instagram.com/goodmorningbedlam/",
+      "spotify": "https://open.spotify.com/artist/4OW3wU4qLBhd5b5MqiRmZD",
+      "yt": "https://www.youtube.com/@goodmorningbedlam"
+    },
+    {
+      "name": "David Huckfelt",
+      "day": "S",
+      "time": "4:30pm - 5:00pm",
+      "stage": "Church",
+      "bio": "David Huckfelt is a Minneapolis songwriter and co-founder of The Pines, known for poetic lyrics, fingerstyle guitar, and a deep love of the upper Midwest landscape. His solo work has earned acclaim for its quiet beauty and unhurried craft.",
+      "web": "https://www.davidhuckfelt.com/",
+      "fb": "https://www.facebook.com/davidhuckfeltmusic/",
+      "insta": "https://www.instagram.com/davidhuckfelt/",
+      "spotify": "https://open.spotify.com/artist/3WJ4rJgBAVIHzMzRCcS04L"
+    },
+    {
+      "name": "Erik Koskinen",
+      "day": "S",
+      "time": "5:00pm - 6:00pm",
+      "stage": "Main",
+      "bio": "Erik Koskinen is a Minnesota guitarist, songwriter, and producer with deep roots in country, rock, and Americana. A consummate sideman turned bandleader, his own records and live shows showcase tasteful guitar work and lived-in songwriting.",
+      "web": "https://erikkoskinen.com/",
+      "fb": "https://www.facebook.com/erikkoskinenmusic",
+      "insta": "https://www.instagram.com/erikkoskinen/",
+      "spotify": "https://open.spotify.com/artist/6lWKsrZCyJHNEbCpcEZjxI"
+    },
+    {
+      "name": "Joyann Parker",
+      "day": "S",
+      "time": "6:30pm - 7:30pm",
+      "stage": "Main",
+      "bio": "Joyann Parker is a Minneapolis-based blues and soul vocalist whose powerhouse voice and original songwriting have earned her national recognition, including multiple Blues Music Award nominations. Expect a tight band, big horns of attitude, and a singer who can absolutely level a tent.",
+      "web": "https://joyannparker.com/",
+      "fb": "https://www.facebook.com/joyannparkermusic",
+      "insta": "https://www.instagram.com/joyannparker/",
+      "spotify": "https://open.spotify.com/artist/3wXqQHXLP9NqkXgdzSDi9G",
+      "yt": "https://www.youtube.com/@joyannparker"
+    },
+    {
+      "name": "Tucker Buchan",
+      "day": "S",
+      "time": "7:30pm - 8:00pm",
+      "stage": "Church",
+      "bio": "Tucker Buchan returns to the Church Stage for a second short solo set as the sun comes down over the river."
+    },
+    {
+      "name": "Pert Near Sandstone",
+      "day": "S",
+      "time": "8:00pm - 9:15pm",
+      "stage": "Main",
+      "bio": "Pert Near Sandstone is a Minnesota string band that has helped redefine modern bluegrass and old-time music for a new generation. Featuring fiddle, banjo, mandolin, guitar, bass, and full-throttle clogging on stage, they're both deeply traditional and unmistakably their own. Founders of the Blue Ox Music Festival.",
+      "web": "https://www.pertnearsandstone.com/",
+      "fb": "https://www.facebook.com/pertnearsandstone",
+      "insta": "https://www.instagram.com/pertnearsandstone/",
+      "spotify": "https://open.spotify.com/artist/0btw3F1z4tlAYUzqFlFHC1",
+      "yt": "https://www.youtube.com/@pertnearsandstone"
+    },
+    {
+      "name": "Open Mic",
+      "day": "S",
+      "time": "9:15pm - 9:45pm",
+      "stage": "Church",
+      "bio": "Late-night open mic at the Church Stage. Sign up at the stage to get a spot before the headliner takes the Main Stage."
+    },
+    {
+      "name": "Jon Sullivan Band",
+      "day": "S",
+      "time": "9:45pm - 11:00pm",
+      "stage": "Main",
+      "bio": "The Jon Sullivan Band closes Saturday night with a high-energy mix of rock, soul, and roots music, anchored by Sullivan's smoky vocals and a band built for the late hour. The right group to send everyone off into the Saturday night sky.",
+      "fb": "https://www.facebook.com/jonsullivanband",
+      "insta": "https://www.instagram.com/jonsullivanband/"
+    }
+  ]
+}

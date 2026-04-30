@@ -1,0 +1,78 @@
+{
+  "friday": [
+    {
+      "name": "Opening Ceremony",
+      "day": "F",
+      "time": "4:55pm",
+      "location": "Main Stage"
+    },
+    {
+      "name": "Delafield Documentary Film",
+      "day": "F",
+      "time": "6:00pm - 7:00pm",
+      "location": "Church"
+    },
+    {
+      "name": "Decorate Your Busy Bag!",
+      "day": "F",
+      "time": "6:00pm - 7:30pm",
+      "location": "Activities Tent"
+    }
+  ],
+  "saturday": [
+    {
+      "name": "Coffee Social with Cinnamon Buns",
+      "day": "S",
+      "time": "10:30am - 11:00am",
+      "location": "Merch Tent"
+    },
+    {
+      "name": "Yoga",
+      "day": "S",
+      "time": "11:00am - 12:00pm",
+      "location": "Main Stage"
+    },
+    {
+      "name": "Delafield Documentary Film",
+      "day": "S",
+      "time": "12:30pm - 1:30pm",
+      "location": "Church"
+    },
+    {
+      "name": "Spoon Workshop",
+      "day": "S",
+      "time": "1:45pm - 2:45pm",
+      "location": "Merch Tent"
+    },
+    {
+      "name": "Activities Tent Open",
+      "day": "S",
+      "time": "2:00pm - 6:00pm",
+      "location": "Activities Tent"
+    },
+    {
+      "name": "Flower Crowns",
+      "day": "S",
+      "time": "3:30pm - 5:00pm",
+      "location": "Activities Tent"
+    },
+    {
+      "name": "Face Painting",
+      "day": "S",
+      "time": "4:30pm - 5:30pm",
+      "location": "Activities Tent"
+    },
+    {
+      "name": "Children's Costume Parade",
+      "day": "S",
+      "time": "5:30pm",
+      "location": "Activities Tent"
+    },
+    {
+      "name": "Delafield Documentary Film",
+      "day": "S",
+      "time": "5:30pm - 6:30pm",
+      "location": "Church"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Rhythm of the River">
+  <defs>
+    <linearGradient id="rotr-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3f857d"/>
+      <stop offset="100%" stop-color="#1f3a38"/>
+    </linearGradient>
+    <clipPath id="rotr-clip">
+      <rect width="64" height="64" rx="14"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#rotr-clip)">
+    <rect width="64" height="64" fill="url(#rotr-bg)"/>
+
+    <!-- River waves along the bottom edge. -->
+    <g fill="none" stroke-linecap="round">
+      <path d="M-4 50 Q 8 46 20 50 T 44 50 T 68 50"
+            stroke="#88beb6" stroke-width="2" opacity="0.55"/>
+      <path d="M-4 56 Q 10 52 22 56 T 46 56 T 70 56"
+            stroke="#dbece9" stroke-width="2" opacity="0.75"/>
+    </g>
+
+    <!-- Block "R" using a reliable system fallback stack. -->
+    <text x="32" y="42"
+          text-anchor="middle"
+          font-family="'Arial Black', 'Helvetica Neue', Impact, sans-serif"
+          font-weight="900"
+          font-size="42"
+          fill="#fff8eb"
+          letter-spacing="-1">R</text>
+
+    <!-- Eighth note in the upper-right corner. -->
+    <g fill="#ff9e1f" transform="translate(48 14) rotate(-12)">
+      <rect x="3" y="0" width="2.6" height="20"/>
+      <path d="M5.6 0 q8 2.5 7 11 q-1.4 -6 -7 -7 z"/>
+      <ellipse cx="0" cy="20" rx="5.4" ry="4"/>
+    </g>
+  </g>
+</svg>
