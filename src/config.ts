@@ -46,7 +46,7 @@ export const NAV_LINKS: NavLink[] = [
   },
   {
     label: 'Survey',
-    to: 'https://docs.google.com/forms/d/e/1FAIpQLSfJk8QrLR7rRrqBstlCVw6CqGKKol7OIfiQcMVCOLXR54Qx7A/viewform?usp=header',
+    to: 'https://docs.google.com/forms/d/e/1FAIpQLSfQze8q8EXl383hEDfV_eSKSrn7FjxWetT59YCJL0GT3Y1eyg/viewform',
     external: true,
     visibility: 'during-after'
   }
