@@ -65,6 +65,13 @@ export function festivalEnd(lastSaturdayTime: string): number {
   return parseTime(FESTIVAL.saturdayDate, parts[parts.length - 1]);
 }
 
+/** Add (or subtract) whole days to a YYYY-MM-DD string. */
+export function addDays(date: string, days: number): string {
+  const [y, m, d] = date.split('-').map(Number);
+  const result = new Date(Date.UTC(y, m - 1, d + days));
+  return result.toISOString().slice(0, 10);
+}
+
 export function formatRelative(seconds: number): string {
   if (seconds < 60) return 'now';
   const minutes = Math.floor(seconds / 60);

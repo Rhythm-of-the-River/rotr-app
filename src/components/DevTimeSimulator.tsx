@@ -3,7 +3,7 @@ import { Clock, X, FastForward } from 'lucide-react';
 import clsx from 'clsx';
 import { useTime } from '@/context/TimeProvider';
 import { FESTIVAL } from '@/config';
-import { parseTime } from '@/utils/time';
+import { addDays, parseTime } from '@/utils/time';
 
 interface Preset {
   label: string;
@@ -12,14 +12,14 @@ interface Preset {
 }
 
 const PRESETS: Preset[] = [
-  { label: 'Pre-festival (Thu noon)', date: '2026-07-09', time: '12:00pm' },
+  { label: 'Pre-festival (Thu noon)', date: addDays(FESTIVAL.fridayDate, -1), time: '12:00pm' },
   { label: 'Friday gates (4:30pm)', date: FESTIVAL.fridayDate, time: '4:30pm' },
   { label: 'Friday opening set', date: FESTIVAL.fridayDate, time: '5:15pm' },
   { label: 'Friday headliner', date: FESTIVAL.fridayDate, time: '10:00pm' },
   { label: 'Sat morning', date: FESTIVAL.saturdayDate, time: '11:30am' },
   { label: 'Sat afternoon', date: FESTIVAL.saturdayDate, time: '3:00pm' },
   { label: 'Sat headliner', date: FESTIVAL.saturdayDate, time: '10:00pm' },
-  { label: 'After festival', date: '2026-07-12', time: '11:00am' }
+  { label: 'After festival', date: addDays(FESTIVAL.saturdayDate, 1), time: '11:00am' }
 ];
 
 /**

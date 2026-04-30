@@ -1,9 +1,11 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { Menu, X, Megaphone } from 'lucide-react';
 import clsx from 'clsx';
-import { NAV_LINKS } from '@/config';
+import { NAV_LINKS, FESTIVAL } from '@/config';
 import { useAnnouncements } from '@/hooks/useAnnouncements';
+import { useTime } from '@/context/TimeProvider';
+import { parseTime } from '@/utils/time';
 
 const READ_KEY = 'rotr.lastReadAnnouncement';
 
@@ -30,6 +32,17 @@ export default function Navbar() {
   const { announcements } = useAnnouncements();
   const latestTime = announcements[0]?.time ?? 0;
   const unread = useUnreadCount(latestTime);
+  const { now } = useTime();
+
+  const visibleLinks = useMemo(() => {
+    const festivalStartSec = parseTime(FESTIVAL.fridayDate, '12:00am');
+    const hasStarted = now >= festivalStartSec;
+    return NAV_LINKS.filter((link) => {
+      if (link.visibility === 'before-festival') return !hasStarted;
+      if (link.visibility === 'during-after') return hasStarted;
+      return true;
+    });
+  }, [now]);
 
   useEffect(() => {
     const onClick = (e: MouseEvent) => {
@@ -50,7 +63,7 @@ export default function Navbar() {
         </Link>
 
         <nav className="hidden items-center gap-5 lg:flex">
-          {NAV_LINKS.map((link) => (
+          {visibleLinks.map((link) => (
             <NavItem key={link.label} link={link} unread={unread} />
           ))}
         </nav>
@@ -76,7 +89,7 @@ export default function Navbar() {
 
           {mobileOpen && (
             <div className="absolute right-2 top-full mt-2 w-56 animate-fade-in rounded-lg border border-river-700 bg-river-900 p-2 shadow-2xl">
-              {NAV_LINKS.map((link) => (
+              {visibleLinks.map((link) => (
                 <NavItem
                   key={link.label}
                   link={link}
