@@ -1,0 +1,26 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Anyone can read announcements (this is a public festival app).
+    // Only authenticated committee members can create or modify them.
+    match /announcements/{docId} {
+      allow read: if true;
+      allow create, update, delete:
+        if request.auth != null
+        && exists(/databases/$(database)/documents/committee_members/$(request.auth.uid));
+    }
+
+    // Committee membership is read-able by signed-in users so the client can
+    // gate UI; only admins should write here (do that from the Firebase console).
+    match /committee_members/{uid} {
+      allow read: if request.auth != null && request.auth.uid == uid;
+      allow write: if false;
+    }
+
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

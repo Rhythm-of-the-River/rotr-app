@@ -1,60 +1,36 @@
 steps:
-  # Install project dependencies and build frontend
-  - name: python:3.13
+  # Install dependencies and build the static site with Vite.
+  - name: node:20
     entrypoint: bash
     args:
       - -c
       - |
-        pip install --no-cache-dir -r requirements.txt
-        export REFLEX_ENV=production
-        export API_URL=https://$_SERVICE_NAME-$PROJECT_NUMBER.$_DEPLOY_REGION.run.app
-        reflex export --no-zip --frontend-only
+        set -euo pipefail
+        npm ci
+        npm run build
 
-  # Deploy to firebase hosting
+  # Install + build Cloud Functions (TypeScript).
+  - name: node:20
+    entrypoint: bash
+    args:
+      - -c
+      - |
+        set -euo pipefail
+        cd functions
+        npm ci
+        npm run build
+
+  # Deploy hosting + firestore + functions to Firebase.
   - name: us-docker.pkg.dev/firebase-cli/us/firebase
-    args: 
+    args:
       - deploy
       - --project=$PROJECT_ID
-      - --only=hosting
-
-  # Build backend container for Artifact Registry
-  - name: gcr.io/cloud-builders/docker
-    args:
-      - build
-      - -t
-      - us-central1-docker.pkg.dev/$PROJECT_ID/rotr-app-repo/$_SERVICE_NAME:$COMMIT_SHA
-      - --build-arg
-      - COMMIT_SHA=$COMMIT_SHA
-      - .
-
-  # Push backend container to Artifact Registry
-  - name: gcr.io/cloud-builders/docker
-    args:
-      - push
-      - us-central1-docker.pkg.dev/$PROJECT_ID/rotr-app-repo/$_SERVICE_NAME:$COMMIT_SHA
-
-  # Deploy container to Cloud Run from Artifact Registry
-  - name: gcr.io/google.com/cloudsdktool/cloud-sdk
-    args:
-      - gcloud
-      - run
-      - deploy
-      - $_SERVICE_NAME
-      - --image=us-central1-docker.pkg.dev/$PROJECT_ID/rotr-app-repo/$_SERVICE_NAME:$COMMIT_SHA
-      - --region=$_DEPLOY_REGION
-      - --memory=$_MEMORY
+      - --only=hosting,firestore,functions
+      - --non-interactive
 
 options:
   logging: CLOUD_LOGGING_ONLY
 
-substitutions:
-
-  # This is the name of the cloud run service where the backend lives
-  _SERVICE_NAME: rotr-app
-  _DEPLOY_REGION: us-central1
-  _MEMORY: 512Mi
-
 tags:
-  - gcp-cloud-build-deploy-cloud-run
-  - gcp-cloud-build-deploy-cloud-run-managed
   - rotr-app
+  - firebase-hosting

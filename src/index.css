@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+
+  body {
+    background:
+      radial-gradient(ellipse at top, rgba(63, 133, 125, 0.18), transparent 60%),
+      radial-gradient(ellipse at bottom, rgba(249, 126, 7, 0.08), transparent 70%),
+      #0e201f;
+    background-attachment: fixed;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display tracking-wide;
+  }
+
+  /* Better tap targets on mobile */
+  button,
+  a {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+@layer components {
+  .card {
+    @apply rounded-xl border border-river-700/60 bg-river-900/70 backdrop-blur-sm shadow-lg shadow-black/20;
+  }
+
+  .card-hover {
+    @apply transition hover:border-river-500 hover:bg-river-800/80 hover:-translate-y-0.5;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg px-4 py-2 font-medium transition disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-primary {
+    @apply btn bg-sun-500 text-river-950 hover:bg-sun-400;
+  }
+
+  .btn-secondary {
+    @apply btn bg-river-700 text-river-50 hover:bg-river-600;
+  }
+
+  .btn-ghost {
+    @apply btn text-river-100 hover:bg-river-800;
+  }
+
+  .input {
+    @apply w-full rounded-lg border border-river-700 bg-river-900/60 px-3 py-2 text-river-50 placeholder:text-river-400 focus:border-sun-400 focus:outline-none focus:ring-1 focus:ring-sun-400;
+  }
+
+  .badge {
+    @apply inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-xs font-semibold uppercase tracking-wider;
+  }
+}
