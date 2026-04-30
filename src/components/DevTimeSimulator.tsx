@@ -23,8 +23,8 @@ const PRESETS: Preset[] = [
 ];
 
 /**
- * Floating dev-only widget for simulating the current time.
- * Renders nothing in production builds.
+ * Floating widget for simulating the current time.
+ * Visible only when `?debug=true` is set in the URL (sticky for the session).
  */
 export default function DevTimeSimulator() {
   const { now, isSimulated, setSimulatedNow, devMode } = useTime();
