@@ -95,9 +95,10 @@ export async function enableNotifications(): Promise<NotificationUiStatus> {
         icon: '/favicon.svg',
         badge: '/favicon.svg',
         tag: 'rotr-announcement',
-        renotify: true,
-        data: { click_action: link }
-      });
+        data: { click_action: link },
+        // `renotify` is a non-standard option not in lib.dom's NotificationOptions.
+        renotify: true
+      } as NotificationOptions & { renotify: boolean });
     });
   } catch {
     // Token / SW failures don't change the user-facing on/off state.
