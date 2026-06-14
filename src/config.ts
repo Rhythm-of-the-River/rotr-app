@@ -40,7 +40,7 @@ export const NAV_LINKS: NavLink[] = [
   { label: 'Announcements', to: '/announcements' },
   {
     label: 'Volunteer',
-    to: 'https://www.signupgenius.com/go/10C0944A8AC29A5F9C16-63598870-rhythm#/',
+    to: 'https://www.signupgenius.com/go/10C0944A8AC29A5F9C16-63598870-rhythm',
     external: true,
     visibility: 'before-festival'
   },
@@ -51,4 +51,3 @@ export const NAV_LINKS: NavLink[] = [
     visibility: 'during-after'
   }
 ];
-
