@@ -12,14 +12,11 @@
       "yt": "https://www.youtube.com/@RueMateMusicVids"
     },
     {
-      "name": "Clint Riedel",
+      "name": "Fort Belmont Director",
       "day": "F",
       "time": "6:00pm - 6:30pm",
       "stage": "Church",
-      "bio": "Clint Riedel is a singer-songwriter rooted in the heartland tradition, weaving acoustic ballads about the people and places he calls home. Expect warm guitar work, plain-spoken lyrics, and a quiet confidence well-suited to the intimacy of the Church Stage.",
-      "web": "https://clintriedel.bandcamp.com/",
-      "fb": "https://www.facebook.com/ClintRiedelMusic/",
-      "apple": "https://music.apple.com/us/artist/1459441032"
+      "bio": "A special presentation from the Director of Fort Belmont, the historic frontier fort replica in Jackson, Minnesota."
     },
     {
       "name": "Mikkel Beckmen & Mike Munson",
@@ -75,13 +72,6 @@
   ],
   "saturday": [
     {
-      "name": "Open Mic",
-      "day": "S",
-      "time": "11:15am - 11:45am",
-      "stage": "Church",
-      "bio": "Saturday morning open mic at the Church Stage. Bring an instrument, sign up at the stage, and share a song or two before the main schedule kicks off."
-    },
-    {
       "name": "City Mouse",
       "day": "S",
       "time": "11:45am - 12:45pm",
@@ -90,15 +80,14 @@
       "fb": "https://www.facebook.com/people/City-Mouse/100021536894781/"
     },
     {
-      "name": "Tucker Buchan",
+      "name": "Fort Belmont Director",
       "day": "S",
       "time": "12:45pm - 1:15pm",
       "stage": "Church",
-      "bio": "Tucker Buchan is a singer-songwriter and multi-instrumentalist whose acoustic sets lean into thoughtful lyrics and gentle, dynamic playing. Catch him for a quiet moment between Main Stage acts.",
-      "yt": "https://www.youtube.com/@TuckerBuchan"
+      "bio": "A special presentation from the Director of Fort Belmont, the historic frontier fort replica in Jackson, Minnesota."
     },
     {
-      "name": "The Weary Ramblers",
+      "name": "Weary Ramblers",
       "day": "S",
       "time": "1:15pm - 2:00pm",
       "stage": "Main",
@@ -146,16 +135,16 @@
       "spotify": "https://open.spotify.com/artist/76Rnjxk1gBlp85HTEwR48R"
     },
     {
-      "name": "David Huckfelt",
+      "name": "Teague Alexy",
       "day": "S",
       "time": "4:30pm - 5:00pm",
       "stage": "Church",
-      "bio": "David Huckfelt is a Minneapolis songwriter and co-founder of The Pines, known for poetic lyrics, fingerstyle guitar, and a deep love of the upper Midwest landscape. His solo work has earned acclaim for its quiet beauty and unhurried craft.",
-      "web": "https://www.davidhuckfelt.com/",
-      "fb": "https://www.facebook.com/davidhuckfeltmusic/",
-      "insta": "https://www.instagram.com/david_huckfelt/",
-      "spotify": "https://open.spotify.com/artist/3LT3ChbVJI2rE6jAFfkGWZ",
-      "yt": "https://www.youtube.com/channel/UC0P9PGupT5qvHWVUdUT4sow"
+      "bio": "Duluth songwriter Teague Alexy returns to the Church Stage for a solo set, showcasing his poet's ear for detail and decades of storytelling in the folk and Americana tradition.",
+      "web": "https://teaguealexymusic.com/",
+      "fb": "https://www.facebook.com/teaguealexymusic/",
+      "insta": "https://www.instagram.com/teaguealexy/",
+      "spotify": "https://open.spotify.com/artist/0WlUDadhiyfOqUFhruXXGf",
+      "yt": "https://www.youtube.com/@teaguealexyofficial"
     },
     {
       "name": "Erik Koskinen",
@@ -168,6 +157,13 @@
       "insta": "https://www.instagram.com/erik_koskinen/",
       "spotify": "https://open.spotify.com/artist/0v65WLY3fpgtvyaN6dWdZ4",
       "yt": "https://www.youtube.com/@ErikKoskinen"
+    },
+    {
+      "name": "Life in Progress",
+      "day": "S",
+      "time": "6:00pm - 6:30pm",
+      "stage": "Church",
+      "bio": "Life in Progress is a Minnesota duo composed of Mike & Bailey Hobbs from Dunnell, blending uplifting harmonies with acoustic guitar and ukulele. They host an annual music festival on their farm called Cornstalk Convergence."
     },
     {
       "name": "Joyann Parker",
