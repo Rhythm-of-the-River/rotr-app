@@ -1,5 +1,7 @@
 import barJson from '@/data/bar.json';
-const data = barJson as { vendor: string };
+import type { BarData } from '@/types';
+
+const data = barJson as BarData;
 
 export default function BarPage() {
   return (
