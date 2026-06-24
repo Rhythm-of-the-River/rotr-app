@@ -5,8 +5,8 @@ export default function StaleInfoBanner() {
         2025 Festival Info
       </p>
       <p className="mt-1 text-sm">
-        This page is still showing last year&apos;s details. Updated 2026 information
-        will be added shortly.
+        This page is still showing last year's details. Updated 2026 information will
+        be added shortly.
       </p>
     </section>
   );

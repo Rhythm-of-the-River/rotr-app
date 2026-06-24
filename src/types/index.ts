@@ -68,7 +68,7 @@ export interface BarItem {
 
 export interface BarData {
   vendor: string;
-  items: BarItem[];
+  items?: BarItem[];
 }
 
 export interface Announcement {
