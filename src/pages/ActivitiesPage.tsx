@@ -3,6 +3,7 @@ import activitiesJson from '@/data/activities.json';
 import type { ActivitiesData, Activity, Timed } from '@/types';
 import { applyTiming } from '@/utils/schedule';
 import ActivityCard from '@/components/ActivityCard';
+import StaleInfoBanner from '@/components/StaleInfoBanner';
 
 const data = activitiesJson as ActivitiesData;
 
@@ -20,8 +21,11 @@ export default function ActivitiesPage() {
           Workshops, films, ceremonies, and other festival happenings.
         </p>
       </header>
-      <Day title="Friday" items={friday} />
-      <Day title="Saturday" items={saturday} />
+      <StaleInfoBanner />
+      <div className="space-y-6 opacity-50">
+        <Day title="Friday" items={friday} />
+        <Day title="Saturday" items={saturday} />
+      </div>
     </div>
   );
 }
