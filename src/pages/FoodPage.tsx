@@ -1,5 +1,6 @@
 import foodJson from '@/data/food.json';
 import type { FoodVendor, MenuItem, MenuOption } from '@/types';
+import StaleInfoBanner from '@/components/StaleInfoBanner';
 
 const vendors = (foodJson as { vendors: FoodVendor[] }).vendors;
 
@@ -11,9 +12,12 @@ export default function FoodPage() {
           Food Vendors
         </h1>
       </header>
-      {vendors.map((vendor) => (
-        <VendorCard key={vendor.vendor} vendor={vendor} />
-      ))}
+      <StaleInfoBanner />
+      <div className="space-y-6 opacity-50">
+        {vendors.map((vendor) => (
+          <VendorCard key={vendor.vendor} vendor={vendor} />
+        ))}
+      </div>
     </div>
   );
 }

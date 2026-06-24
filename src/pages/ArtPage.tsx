@@ -1,5 +1,6 @@
 import artJson from '@/data/art.json';
 import type { ArtVendor } from '@/types';
+import StaleInfoBanner from '@/components/StaleInfoBanner';
 
 const vendors = (artJson as { vendors: ArtVendor[] }).vendors;
 
@@ -11,7 +12,8 @@ export default function ArtPage() {
           Art Vendors
         </h1>
       </header>
-      <div className="grid gap-4 sm:grid-cols-2">
+      <StaleInfoBanner />
+      <div className="grid gap-4 opacity-50 sm:grid-cols-2">
         {vendors.map((vendor) => (
           <article key={vendor.vendor} className="card p-4">
             <h2 className="mb-2 text-2xl text-sun-200">{vendor.vendor}</h2>
