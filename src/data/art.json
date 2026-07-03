@@ -5,22 +5,6 @@
       "description": "Adorn yourself with beautiful, temporary body art from Akashic Magic. Specializing in intricate and stunning henna tattoos, they offer a variety of designs to create the perfect look to complement your festival style."
     },
     {
-      "vendor": "Drivensole",
-      "description": "Get into the boho and hippie vibe with Drivensole, a traveling women's boutique. They offer a curated collection of boho and vintage-style clothing, purses, trucker hats, tapestries, blankets, and other unique accessories to express your inner free spirit."
-    },
-    {
-      "vendor": "Feelin' Groovy",
-      "description": "Catch some good vibes at the Feelin' Groovy booth! They offer a curated collection of crystals, stones, unique bohemian jewelry, and other groovy gadgets and treasures to help you connect with your inner flower child."
-    },
-    {
-      "vendor": "Healing Connections",
-      "description": "Take a moment to relax, replenish, and heal with Healing Connections. Specializing in Reiki, a gentle Japanese form of energy work, they provide support for the mind, body, and spirit. Stop by for a session to experience a feeling of complete relaxation and re-center yourself during the festival."
-    },
-    {
-      "vendor": "Lakota Made",
-      "description": "Discover traditional herbal remedies and personal care from Lakota Made, an Indigenous, woman-owned business. They create small-batch products using sustainable, eco-friendly ingredients. Explore their wide range of offerings, including herbal teas, healing salves, tonics, shampoo and body bars, and natural skincare, all rooted in traditional Lakota knowledge."
-    },
-    {
       "vendor": "Nibbe Ceramics",
       "description": "Explore the beautiful, handcrafted work of Nibbe Ceramics. This artist specializes in creating one-of-a-kind pottery using both traditional wood-firing and modern electric kiln methods. From functional mugs and bowls to decorative art, each piece carries its own unique character. Stop by their booth to find a special piece or to discuss a custom order."
     },
@@ -33,16 +17,8 @@
       "description": "Discover the unique collection at Slare Fashions, featuring a wonderful variety of crafts and clothing. Browse their selection of stylish apparel and handmade goods to find the perfect one-of-a-kind item to remember your festival experience."
     },
     {
-      "vendor": "Spirals Spa",
-      "description": "It's time to invest in yourself with Spirals Spa, a premier beauty and wellness spa located right here in Jackson. Dedicated to enhancing natural beauty and promoting relaxation, their team creates a tranquil environment for luxurious self-care. Stop by their booth to unwind with rejuvenating services and learn more about their full range of massage, spa treatments, and advanced esthetics."
-    },
-    {
       "vendor": "TnD Crafts",
       "description": "Discover the functional art of TnD Crafts, specializing in beautiful, handcrafted wood items. Their collection features stunning, one-of-a-kind cutting boards made from unique woods, as well as elegant decorative pieces like resin-inlaid vases. Each item is a perfect blend of practicality and artisanal design, making for a wonderful addition to any home."
-    },
-    {
-      "vendor": "Villa Rustica",
-      "description": "Experience an authentic taste of the Mediterranean from VILLA RUSTICA. This local Minnesota vineyard is proud to feature its own Extra Virgin Olive Oil, personally harvested and pressed in Greece. Stop by to sample this unique, high-quality \"liquid gold.\""
     }
   ]
 }

@@ -1,6 +1,5 @@
 import foodJson from '@/data/food.json';
 import type { FoodVendor, MenuItem, MenuOption } from '@/types';
-import StaleInfoBanner from '@/components/StaleInfoBanner';
 
 const vendors = (foodJson as { vendors: FoodVendor[] }).vendors;
 
@@ -12,8 +11,7 @@ export default function FoodPage() {
           Food Vendors
         </h1>
       </header>
-      <StaleInfoBanner />
-      <div className="space-y-6 opacity-50">
+      <div className="space-y-6">
         {vendors.map((vendor) => (
           <VendorCard key={vendor.vendor} vendor={vendor} />
         ))}
@@ -25,13 +23,23 @@ export default function FoodPage() {
 function VendorCard({ vendor }: { vendor: FoodVendor }) {
   return (
     <section className="card space-y-3 p-5">
-      <h2 className="text-center text-3xl text-sun-200">{vendor.vendor}</h2>
-      <hr className="border-river-700" />
-      <div className="space-y-3">
-        {vendor.menu.map((item, i) => (
-          <MenuRow key={i} item={item} />
-        ))}
+      <div className="text-center">
+        <h2 className="text-3xl text-sun-200">{vendor.vendor}</h2>
+        {vendor.subtitle && (
+          <p className="text-sm italic text-river-300">{vendor.subtitle}</p>
+        )}
       </div>
+      <hr className="border-river-700" />
+      {vendor.menu.length > 0 && (
+        <div className="space-y-3">
+          {vendor.menu.map((item, i) => (
+            <MenuRow key={i} item={item} />
+          ))}
+        </div>
+      )}
+      {vendor.note && (
+        <p className="text-center text-sm italic text-river-300">{vendor.note}</p>
+      )}
     </section>
   );
 }
@@ -68,7 +76,7 @@ function Option({ option }: { option: MenuOption }) {
   return (
     <div className="flex items-baseline justify-between gap-3 text-sm text-river-200">
       <span>{option.option}</span>
-      <span>{option.price}</span>
+      {option.price && <span>{option.price}</span>}
     </div>
   );
 }
