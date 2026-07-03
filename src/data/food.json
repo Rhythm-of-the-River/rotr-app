@@ -102,8 +102,8 @@
           "section": "The Goods"
         },
         {
-          "item": "The 'Simp' Smashie",
-          "desc": "1/4lb custom blended Welcome Meats' beef n' bacon smash burger served on a brioche bun. Add an extra patty and/or enjoy with American cheese!",
+          "item": "Cup Truck Smash Burger",
+          "desc": "1/4# fresh beef n' bacon patty smashed to perfection n' served on a fresh brioche bun.",
           "options": [
             {
               "option": "Add American cheese"
@@ -115,88 +115,61 @@
         },
         {
           "item": "The Fancified Smashie",
-          "desc": "This 1/4lb custom-blended Welcome Meats' beef n' bacon smashburger is topped with smoked mozzarella cheese, vinegar slaw n' local green sauce (beauitful blend of local kale, argula, parsley n' garlic scape) n' served on a brioche bun. Stop drooling on your screens n' come see us at the truck."
+          "desc": "Always fresh n' always changing....Today's smashie features a 1/4# fresh beef n' bacon patty topped with melted brie cheese, marinated olives n' chili crunch. Grab yourself a napkin for this one!"
         },
         {
           "item": "The Ultimate Smashie",
-          "desc": "We're not foolin' around with this one! Double 1/4lb patties layered with red onion, American cheese, Cup Truck secret sauce n' smashed again on a brioche bun."
+          "desc": "Watch your drool for this one! This smashie is loaded with 2, 1/4lb beef n' bacon patties, American cheese, red onion n' Seth special sauce."
         },
         {
-          "item": "Burnt End Wein!",
-          "desc": "What can we say? This all-beef burnt end dog aims to please! Try our \"Top Shelf Wein\": Topped with house dill relish n' house roasted jalapeno ranch.  It's like no other wein!",
-          "options": [
-            {
-              "option": "Plain"
-            },
-            {
-              "option": "Top Shelf"
-            }
-          ]
+          "item": "Holy Beef-Wich",
+          "desc": "Slow-smoked chopped beef brisket, melty Mexican cheese, local poblano-cilantro cream, and enough pickled onion n' cabbage to keep things interesting."
         },
         {
-          "item": "Chopped Italian Sammie",
-          "desc": "Watch your drool for this one...hoagie bun stuffed with diced mortadella, capicola, red onion, tomato, pepperoncini, smoked Gouda cheese, lettuce n' italian mayo!"
+          "item": "The Chopped Italian",
+          "desc": "Chopped pepperoni, mortadella, capicola, crisp lettuce, tomato, red onion, peperonata, pistachio, smoked mozzarella, n' tossed with italian mayo stacked so high you'll need to unhinge your jaw."
         },
         {
-          "item": "Smoked Ham Sand-O",
-          "desc": "Smoked ham gets cozy with herb ricotta, sweet-hot pepper jelly, and arugula\u2014like a garden party with a spicy secret. Vegetarian?  No problem! We'll load you up with non-ham ingredients."
+          "item": "1/4# All Beef Burnt End Wiener",
+          "desc": "This is NOT your average wiener. It's made of ground burnt ends and seared to juicy perfection."
         },
         {
-          "item": "Wingy Dingy",
-          "desc": "Just because it's fun to say. 4 wing n' drummies tossed in a local garlic scape-jalapeno sauce....What's not to love?"
+          "item": "The Top Shelf Burnt End Wiener",
+          "desc": "Stewed tomato jam topped with parmesan cream. You'll never think the same about your wein after biting into this bad boy!"
         },
         {
-          "section": "The Sides"
+          "section": "Sides n' Stuff"
         },
         {
-          "item": "Seasoned Shoestring Fries",
-          "desc": "Fried to perfection n' seasoned with Seth's pantry of spices."
+          "item": "Seasoned Shoe String Fries",
+          "desc": "Fried to golden perfection n' topped with Seth's pantry of seasonings."
         },
         {
-          "item": "Fancy Pants Cheesy Mac",
-          "desc": "Not your 'pedestrian' mac n' cheese. Smoked Gouda n' American cheese topped with a special crunch"
+          "item": "Homemade Mac N' Cheese",
+          "desc": "Our mac n' cheese is ALWAYS made to order n' ALWAYS from scratch."
         },
         {
-          "item": "Farro n' Local Kale Salad",
-          "desc": "Dried cherries, toasted walnuts, manchego cheese n' hot honey bacon vinaigrette. Wholesome enough for a yoga retreat, wild enough for Rhythm of the River. Vegetarian? We'll skip the bacon n' top this salad with a local cider vinaigrette"
+          "item": "Local Zuc-Cuc Salad",
+          "desc": "For our veggie lovin' friends - fresh zucchini - cucumber - horseradish salad. Who said veggies couldn't be fun?"
         },
         {
           "section": "The Desserts"
         },
         {
-          "item": "Cookies n' Cream Cupcake",
-          "desc": "Addie whips these cupcakes up from scratch n' donates $.50 from every cupcake to a local non-profit!"
+          "item": "Addie's Cupcakes for a Cause",
+          "desc": "Addie bakes from the heart n' from scratch. She donates $.50 from every cupcake sale to a local non-profit in our community!"
         },
         {
-          "item": "Kookies for Kidneys - Cinnamon Almond Kookie",
-          "desc": "Inspired by her sister, Parker is raising money for a cause close to her heart...n' kidneys! Try Parker's Kookies for Kidneys! This week's flavor is cinnamon almond. Parker received a life-saving kidney transplant at 6 years old. At 7, she is now raising money for CKD research!"
+          "item": "Parker's Kookies for Kidneys",
+          "desc": "Parker was diagnosed with Chronic Kidney Disease at 4 and had a kidney transplant at 6. She bakes these cookies from scratch and donates $.50 from each cookie to the National Kidney Registry."
         },
         {
           "item": "Local Rhubarb Crisp",
-          "desc": "No one is sad about rhubarb season! Enjoy this fresh n' local rhubarb crisp baked perfectly in a 5-inch round pan. Enough for 2 people, or 1 lover of rhubarb!"
+          "desc": "No one is sad it's rhubarb season! We pick this rhubarb fresh from our garden n' turn it into the perfect end of meal treat!"
         },
         {
-          "item": "Oreo Pop",
-          "desc": "Think cake-pop, but made with crushed Oreos on a stick with crunchy chocolate coating."
-        },
-        {
-          "item": "Mint Chip Ice cream Cake",
-          "desc": "Crushed Oreo base, homemade chocolate layer topped with creamy Reese's Peanut Butter Cup ice cream n' more crushed Oreos n' homemade chocolate sauce."
-        },
-        {
-          "item": "Local Strawberry Buttermilk ice cream",
-          "desc": "Sun-kissed June n' everbearing strawberries picked fresh from our garden, churned with sweet n' creamy buttermilk into frozen perfection."
-        },
-        {
-          "item": "Lemon Poppyseed Cake",
-          "desc": "Bright, zesty lemon poppyseed cake\u2014like sunshine in cake form"
-        },
-        {
-          "section": "Drinks"
-        },
-        {
-          "item": "Drinks",
-          "desc": "Coke, Diet Coke, Sprite, Water"
+          "item": "Homemade Ice Cream Cake",
+          "desc": "Crushed Oreo crust, homemade chocolate layer topped with creamy ice cream n' finished with more Oreos."
         }
       ]
     },
