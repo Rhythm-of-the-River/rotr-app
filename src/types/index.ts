@@ -34,7 +34,7 @@ export interface ActivitiesData {
 
 export interface MenuOption {
   option: string;
-  price: string;
+  price?: string;
 }
 
 export interface MenuItem {
@@ -47,6 +47,8 @@ export interface MenuItem {
 
 export interface FoodVendor {
   vendor: string;
+  subtitle?: string;
+  note?: string;
   menu: MenuItem[];
 }
 

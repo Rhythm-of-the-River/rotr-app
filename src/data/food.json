@@ -1,29 +1,102 @@
 {
   "vendors": [
     {
-      "vendor": "Cheese Carriage",
+      "vendor": "Toro Bravo",
+      "subtitle": "Authentic Mexican Food",
+      "note": "Prices will be posted at the festival.",
       "menu": [
         {
-          "item": "Cheese Curds",
-          "price": "$8"
+          "section": "Entrees"
         },
         {
-          "item": "Corn Dog",
-          "price": "$6"
+          "item": "Tacos",
+          "desc": "Choice of meat, choice of tortilla (flour or corn), onion, & cilantro."
         },
         {
-          "item": "Hot Dog",
-          "price": "$5"
+          "item": "Quesadilla",
+          "desc": "Choice of meat & cheese, served with lettuce, tomato, onion, & sour cream."
         },
         {
-          "item": "Drinks",
-          "desc": "Pop, Water",
-          "price": "$3"
+          "item": "Burrito",
+          "desc": "Choice of meat, cheese, refried beans, rice, onion, tomato, lettuce, & sour cream."
+        },
+        {
+          "item": "Cheezy Burrito",
+          "desc": "Choice of meat, cheese, refried beans, rice, onion, tomato, lettuce, & queso dip."
+        },
+        {
+          "item": "Torta",
+          "desc": "Choice of meat, refried beans, mayo, lettuce, tomato, onion, & sour cream."
+        },
+        {
+          "item": "Nachos",
+          "desc": "Choice of meat, chips, nacho cheese, sour cream, tomato, & onion."
+        },
+        {
+          "item": "Nachos Fries",
+          "desc": "Choice of meat, French fries, nacho cheese, sour cream, tomato, & onion."
+        },
+        {
+          "section": "Choice of Meat"
+        },
+        {
+          "item": "Steak / Carne Asada"
+        },
+        {
+          "item": "Marinated Pork / Al Pastor"
+        },
+        {
+          "item": "Mexican Sausage / Chorizo"
+        },
+        {
+          "item": "Carnitas"
+        },
+        {
+          "item": "Birria"
+        },
+        {
+          "section": "Sides"
+        },
+        {
+          "item": "Rice / Arroz"
+        },
+        {
+          "item": "Refried Beans / Frijoles Fritos"
+        },
+        {
+          "item": "Sour Cream / Crema"
+        },
+        {
+          "item": "Guacamole"
+        },
+        {
+          "item": "French Fries / Papas Fritas"
+        },
+        {
+          "section": "Bebida / Drinks"
+        },
+        {
+          "item": "Mexican Cola (Half Liter) / Coca de Medio Litro"
+        },
+        {
+          "item": "Jarritos"
+        },
+        {
+          "item": "Gatorade"
+        },
+        {
+          "item": "Bottled Water / Botella de Agua"
+        },
+        {
+          "item": "Aguas Frescas",
+          "desc": "Fresh water flavors, available small (chica) or big (grande)."
         }
       ]
     },
     {
       "vendor": "The Cup Truck",
+      "subtitle": "Local Scratch Cooking",
+      "note": "Prices will be posted at the festival.",
       "menu": [
         {
           "section": "The Goods"
@@ -31,251 +104,113 @@
         {
           "item": "The 'Simp' Smashie",
           "desc": "1/4lb custom blended Welcome Meats' beef n' bacon smash burger served on a brioche bun. Add an extra patty and/or enjoy with American cheese!",
-          "price": "$10",
           "options": [
             {
-              "option": "Add American cheese",
-              "price": "$1"
+              "option": "Add American cheese"
             },
             {
-              "option": "Add an extra patty",
-              "price": "$3"
+              "option": "Add an extra patty"
             }
           ]
         },
         {
           "item": "The Fancified Smashie",
-          "desc": "This 1/4lb custom-blended Welcome Meats' beef n' bacon smashburger is topped with smoked mozzarella cheese, vinegar slaw n' local green sauce (beauitful blend of local kale, argula, parsley n' garlic scape) n' served on a brioche bun. Stop drooling on your screens n' come see us at the truck.",
-          "price": "$15"
+          "desc": "This 1/4lb custom-blended Welcome Meats' beef n' bacon smashburger is topped with smoked mozzarella cheese, vinegar slaw n' local green sauce (beauitful blend of local kale, argula, parsley n' garlic scape) n' served on a brioche bun. Stop drooling on your screens n' come see us at the truck."
         },
         {
           "item": "The Ultimate Smashie",
-          "desc": "We're not foolin' around with this one! Double 1/4lb patties layered with red onion, American cheese, Cup Truck secret sauce n' smashed again on a brioche bun.",
-          "price": "$16"
+          "desc": "We're not foolin' around with this one! Double 1/4lb patties layered with red onion, American cheese, Cup Truck secret sauce n' smashed again on a brioche bun."
         },
         {
           "item": "Burnt End Wein!",
           "desc": "What can we say? This all-beef burnt end dog aims to please! Try our \"Top Shelf Wein\": Topped with house dill relish n' house roasted jalapeno ranch.  It's like no other wein!",
           "options": [
             {
-              "option": "Plain",
-              "price": "$6"
+              "option": "Plain"
             },
             {
-              "option": "Top Shelf",
-              "price": "$8"
+              "option": "Top Shelf"
             }
           ]
         },
         {
           "item": "Chopped Italian Sammie",
-          "desc": "Watch your drool for this one...hoagie bun stuffed with diced mortadella, capicola, red onion, tomato, pepperoncini, smoked Gouda cheese, lettuce n' italian mayo!",
-          "price": "$15"
+          "desc": "Watch your drool for this one...hoagie bun stuffed with diced mortadella, capicola, red onion, tomato, pepperoncini, smoked Gouda cheese, lettuce n' italian mayo!"
         },
         {
           "item": "Smoked Ham Sand-O",
-          "desc": "Smoked ham gets cozy with herb ricotta, sweet-hot pepper jelly, and arugula—like a garden party with a spicy secret. Vegetarian?  No problem! We'll load you up with non-ham ingredients.",
-          "price": "$12"
+          "desc": "Smoked ham gets cozy with herb ricotta, sweet-hot pepper jelly, and arugula\u2014like a garden party with a spicy secret. Vegetarian?  No problem! We'll load you up with non-ham ingredients."
         },
         {
           "item": "Wingy Dingy",
-          "desc": "Just because it's fun to say. 4 wing n' drummies tossed in a local garlic scape-jalapeno sauce....What's not to love?",
-          "price": "$8"
+          "desc": "Just because it's fun to say. 4 wing n' drummies tossed in a local garlic scape-jalapeno sauce....What's not to love?"
         },
         {
           "section": "The Sides"
         },
         {
           "item": "Seasoned Shoestring Fries",
-          "desc": "Fried to perfection n' seasoned with Seth's pantry of spices.",
-          "price": "$4"
+          "desc": "Fried to perfection n' seasoned with Seth's pantry of spices."
         },
         {
           "item": "Fancy Pants Cheesy Mac",
-          "desc": "Not your 'pedestrian' mac n' cheese. Smoked Gouda n' American cheese topped with a special crunch",
-          "price": "$6"
+          "desc": "Not your 'pedestrian' mac n' cheese. Smoked Gouda n' American cheese topped with a special crunch"
         },
         {
           "item": "Farro n' Local Kale Salad",
-          "desc": "Dried cherries, toasted walnuts, manchego cheese n' hot honey bacon vinaigrette. Wholesome enough for a yoga retreat, wild enough for Rhythm of the River. Vegetarian? We'll skip the bacon n' top this salad with a local cider vinaigrette",
-          "price": "$6"
+          "desc": "Dried cherries, toasted walnuts, manchego cheese n' hot honey bacon vinaigrette. Wholesome enough for a yoga retreat, wild enough for Rhythm of the River. Vegetarian? We'll skip the bacon n' top this salad with a local cider vinaigrette"
         },
         {
           "section": "The Desserts"
         },
         {
           "item": "Cookies n' Cream Cupcake",
-          "desc": "Addie whips these cupcakes up from scratch n' donates $.50 from every cupcake to a local non-profit!",
-          "price": "$3"
+          "desc": "Addie whips these cupcakes up from scratch n' donates $.50 from every cupcake to a local non-profit!"
         },
         {
           "item": "Kookies for Kidneys - Cinnamon Almond Kookie",
-          "desc": "Inspired by her sister, Parker is raising money for a cause close to her heart...n' kidneys! Try Parker's Kookies for Kidneys! This week's flavor is cinnamon almond. Parker received a life-saving kidney transplant at 6 years old. At 7, she is now raising money for CKD research!",
-          "price": "$2"
+          "desc": "Inspired by her sister, Parker is raising money for a cause close to her heart...n' kidneys! Try Parker's Kookies for Kidneys! This week's flavor is cinnamon almond. Parker received a life-saving kidney transplant at 6 years old. At 7, she is now raising money for CKD research!"
         },
         {
           "item": "Local Rhubarb Crisp",
-          "desc": "No one is sad about rhubarb season! Enjoy this fresh n' local rhubarb crisp baked perfectly in a 5-inch round pan. Enough for 2 people, or 1 lover of rhubarb!",
-          "price": "$6"
+          "desc": "No one is sad about rhubarb season! Enjoy this fresh n' local rhubarb crisp baked perfectly in a 5-inch round pan. Enough for 2 people, or 1 lover of rhubarb!"
         },
         {
           "item": "Oreo Pop",
-          "desc": "Think cake-pop, but made with crushed Oreos on a stick with crunchy chocolate coating.",
-          "price": "$3"
+          "desc": "Think cake-pop, but made with crushed Oreos on a stick with crunchy chocolate coating."
         },
         {
           "item": "Mint Chip Ice cream Cake",
-          "desc": "Crushed Oreo base, homemade chocolate layer topped with creamy Reese's Peanut Butter Cup ice cream n' more crushed Oreos n' homemade chocolate sauce.",
-          "price": "$6"
+          "desc": "Crushed Oreo base, homemade chocolate layer topped with creamy Reese's Peanut Butter Cup ice cream n' more crushed Oreos n' homemade chocolate sauce."
         },
         {
           "item": "Local Strawberry Buttermilk ice cream",
-          "desc": "Sun-kissed June n' everbearing strawberries picked fresh from our garden, churned with sweet n' creamy buttermilk into frozen perfection.",
-          "price": "$3"
+          "desc": "Sun-kissed June n' everbearing strawberries picked fresh from our garden, churned with sweet n' creamy buttermilk into frozen perfection."
         },
         {
           "item": "Lemon Poppyseed Cake",
-          "desc": "Bright, zesty lemon poppyseed cake—like sunshine in cake form",
-          "price": "$6"
+          "desc": "Bright, zesty lemon poppyseed cake\u2014like sunshine in cake form"
         },
         {
           "section": "Drinks"
         },
         {
           "item": "Drinks",
-          "desc": "Coke, Diet Coke, Sprite, Water",
-          "price": "$2"
+          "desc": "Coke, Diet Coke, Sprite, Water"
         }
       ]
     },
     {
-      "vendor": "Ole's Gathering Place",
-      "menu": [
-        {
-          "item": "Smoked Pork Sandwich",
-          "price": "$8",
-          "options": [
-            {
-              "option": "w/ coleslaw, smoked baked beans",
-              "price": "$12"
-            }
-          ]
-        },
-        {
-          "item": "Smoked Brisket Sandwich",
-          "price": "$10",
-          "options": [
-            {
-              "option": "w/ coleslaw, smoked baked beans",
-              "price": "$14"
-            }
-          ]
-        },
-        {
-          "item": "Queso Bacon Mac and Cheese",
-          "price": "$10",
-          "options": [
-            {
-              "option": "w/ pork",
-              "price": "$12"
-            },
-            {
-              "option": "w/ brisket",
-              "price": "$14"
-            }
-          ]
-        },
-        {
-          "item": "Queso Nachos (onion, tomato, jalapeno)",
-          "price": "$10",
-          "options": [
-            {
-              "option": "w/ pork",
-              "price": "$12"
-            },
-            {
-              "option": "w/ brisket",
-              "price": "$14"
-            }
-          ]
-        },
-        {
-          "item": "Oledelphia (pork)",
-          "price": "$12"
-        },
-        {
-          "item": "Oledelphia (brisket)",
-          "price": "$14",
-          "options": [
-            {
-              "option": "w/ coleslaw, smoked baked beans",
-              "price": "$16"
-            }
-          ]
-        },
-        {
-          "item": "Side of colelsaw, smoked baked beans",
-          "price": "$3"
-        },
-        {
-          "item": "Drinks",
-          "desc": "Pepsi, Mt. Dew, Dr. Pepper, Diet Dr. Pepper",
-          "price": "$1"
-        }
-      ]
+      "vendor": "The Elevated Cup",
+      "subtitle": "Cafe",
+      "note": "Typically offers salads, sandwiches, and fresh daily baking. Festival menu to be announced.",
+      "menu": []
     },
     {
-      "vendor": "TNT Indian Style Tacos",
-      "menu": [
-        {
-          "item": "Indian Taco",
-          "options": [
-            {
-              "option": "w/ Seasoned Beef",
-              "price": "$13"
-            },
-            {
-              "option": "w/ Pinto Beans",
-              "price": "$13"
-            },
-            {
-              "option": "w/ Chicken",
-              "price": "$14"
-            },
-            {
-              "option": "w/ Beef & Beans",
-              "price": "$14"
-            }
-          ]
-        },
-        {
-          "item": "Taco Salad w/ Seasoned Beef",
-          "price": "$13"
-        },
-        {
-          "item": "Nacho Supreme w/ Seasoned Beef",
-          "price": "$13"
-        },
-        {
-          "item": "Nachos (Chips & Cheese)",
-          "price": "$6"
-        },
-        {
-          "item": "Elephant Ear (Fry Bread)",
-          "price": "$6",
-          "options": [
-            {
-              "option": "w/ Ice Cream",
-              "price": "$8"
-            }
-          ]
-        },
-        {
-          "item": "Drinks",
-          "desc": "Pop, Water",
-          "price": "$3"
-        }
-      ]
+      "vendor": "Lep's Take Me Out",
+      "subtitle": "Lao/Thai Cuisine",
+      "note": "Saturday only. Menu to be announced.",
+      "menu": []
     }
   ]
 }
