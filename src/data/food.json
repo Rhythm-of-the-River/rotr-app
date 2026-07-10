@@ -218,8 +218,111 @@
     {
       "vendor": "The Elevated Cup",
       "subtitle": "Cafe",
-      "note": "Typically offers salads, sandwiches, and fresh daily baking. Festival menu to be announced.",
-      "menu": []
+      "menu": [
+        {
+          "section": "Drinks"
+        },
+        {
+          "item": "Sweet Tea",
+          "options": [
+            {
+              "option": "16 oz mason jar",
+              "price": "$6"
+            },
+            {
+              "option": "32 oz mason jar",
+              "price": "$10"
+            }
+          ]
+        },
+        {
+          "item": "Classic Lemonade",
+          "options": [
+            {
+              "option": "16 oz mason jar",
+              "price": "$6"
+            },
+            {
+              "option": "32 oz mason jar",
+              "price": "$10"
+            }
+          ]
+        },
+        {
+          "item": "Dragon Fruit Strawberry Lemonade",
+          "desc": "Pitaya + strawberry purée.",
+          "options": [
+            {
+              "option": "16 oz mason jar",
+              "price": "$7"
+            },
+            {
+              "option": "32 oz mason jar",
+              "price": "$12"
+            }
+          ]
+        },
+        {
+          "section": "Bakery"
+        },
+        {
+          "item": "Bread",
+          "options": [
+            {
+              "option": "Special",
+              "price": "$14"
+            },
+            {
+              "option": "Regular",
+              "price": "$10"
+            }
+          ]
+        },
+        {
+          "item": "Cookies",
+          "options": [
+            {
+              "option": "1 cookie",
+              "price": "$3"
+            },
+            {
+              "option": "2 cookies",
+              "price": "$5"
+            },
+            {
+              "option": "3 cookies",
+              "price": "$7"
+            }
+          ]
+        },
+        {
+          "item": "Coffee Bag",
+          "price": "$18"
+        },
+        {
+          "item": "Tea Blend",
+          "price": "$16"
+        },
+        {
+          "section": "Merch"
+        },
+        {
+          "item": "Tumbler",
+          "price": "$20"
+        },
+        {
+          "item": "Glass Cup",
+          "price": "$4"
+        },
+        {
+          "item": "Glass Straw",
+          "price": "$1"
+        },
+        {
+          "item": "Metal Straw",
+          "price": "$1"
+        }
+      ]
     },
     {
       "vendor": "Lep's Take Me Out",
