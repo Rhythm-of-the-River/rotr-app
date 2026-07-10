@@ -170,12 +170,12 @@
         {
           "item": "Addie's Cupcake",
           "price": "$3",
-          "desc": "Chocolate-Peanut Butter."
+          "desc": "Chocolate-peanut butter flavor."
         },
         {
           "item": "Parker's Kookie",
           "price": "$2",
-          "desc": "Monster."
+          "desc": "Monster flavor."
         },
         {
           "item": "Local Rhubarb Crisp",
@@ -184,7 +184,7 @@
         {
           "item": "Homemade Ice Cream Cake",
           "price": "$6",
-          "desc": "Chocolate Lava Cake."
+          "desc": "Chocolate lava cake flavor."
         },
         {
           "item": "Gluten Free Oreo Pop",
