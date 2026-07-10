@@ -1,16 +1,4 @@
-import { useMemo } from 'react';
-import activitiesJson from '@/data/activities.json';
-import type { ActivitiesData, Activity, Timed } from '@/types';
-import { applyTiming } from '@/utils/schedule';
-import ActivityCard from '@/components/ActivityCard';
-import StaleInfoBanner from '@/components/StaleInfoBanner';
-
-const data = activitiesJson as ActivitiesData;
-
 export default function ActivitiesPage() {
-  const friday = useMemo(() => applyTiming(data.friday), []);
-  const saturday = useMemo(() => applyTiming(data.saturday), []);
-
   return (
     <div className="space-y-6">
       <header>
@@ -21,24 +9,12 @@ export default function ActivitiesPage() {
           Workshops, films, ceremonies, and other festival happenings.
         </p>
       </header>
-      <StaleInfoBanner />
-      <div className="space-y-6 opacity-50">
-        <Day title="Friday" items={friday} />
-        <Day title="Saturday" items={saturday} />
-      </div>
+      <section className="card p-4 text-river-100">
+        <p>
+          Interested in activities? Keep an eye out for activities posted on the
+          chalkboard by the activity tent!
+        </p>
+      </section>
     </div>
-  );
-}
-
-function Day({ title, items }: { title: string; items: Timed<Activity>[] }) {
-  return (
-    <section className="space-y-3">
-      <h2 className="text-river-100">{title}</h2>
-      <div className="space-y-2">
-        {items.map((a) => (
-          <ActivityCard key={`${a.day}-${a.name}-${a.time}`} activity={a} />
-        ))}
-      </div>
-    </section>
   );
 }
