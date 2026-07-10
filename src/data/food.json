@@ -267,6 +267,7 @@
         },
         {
           "item": "Bread",
+          "desc": "Flavors: Blonde; Blue berry lemon; Jalapeños cheddar; Triple pepper jack (habanero, pablano, jalapeno); Shallot herb and feta.",
           "options": [
             {
               "option": "Special",
@@ -280,6 +281,7 @@
         },
         {
           "item": "Cookies",
+          "desc": "Flavors: Choc choc sea salt; Chocolate pistachio; Oatmeal cranberry walnut orange zest.",
           "options": [
             {
               "option": "1 cookie",
