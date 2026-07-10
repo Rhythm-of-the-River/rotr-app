@@ -96,88 +96,122 @@
     {
       "vendor": "The Cup Truck",
       "subtitle": "Local Scratch Cooking",
-      "note": "Prices will be posted at the festival.",
       "menu": [
         {
           "section": "The Goods"
         },
         {
-          "item": "Cup Truck Smash Burger",
+          "item": "1/4# Fresh Beef N' Bacon Smashie",
+          "price": "$11",
           "desc": "1/4# fresh beef n' bacon patty smashed to perfection n' served on a fresh brioche bun.",
           "options": [
             {
-              "option": "Add American cheese"
+              "option": "Add American cheese",
+              "price": "+$1"
             },
             {
-              "option": "Add an extra patty"
+              "option": "Double patty",
+              "price": "+$3"
             }
           ]
         },
         {
           "item": "The Fancified Smashie",
-          "desc": "Always fresh n' always changing....Today's smashie features a 1/4# fresh beef n' bacon patty topped with melted brie cheese, marinated olives n' chili crunch. Grab yourself a napkin for this one!"
+          "price": "$16",
+          "desc": "Brie cheese, marinated olives n' chili crunch."
         },
         {
           "item": "The Ultimate Smashie",
-          "desc": "Watch your drool for this one! This smashie is loaded with 2, 1/4lb beef n' bacon patties, American cheese, red onion n' Seth special sauce."
+          "price": "$18",
+          "desc": "Double patty, American cheese, red onion, n' Seth's special sauce."
         },
         {
-          "item": "Holy Beef-Wich",
-          "desc": "Slow-smoked chopped beef brisket, melty Mexican cheese, local poblano-cilantro cream, and enough pickled onion n' cabbage to keep things interesting."
+          "section": "More Goods"
         },
         {
           "item": "The Chopped Italian",
-          "desc": "Chopped pepperoni, mortadella, capicola, crisp lettuce, tomato, red onion, peperonata, pistachio, smoked mozzarella, n' tossed with italian mayo stacked so high you'll need to unhinge your jaw."
+          "price": "$15",
+          "desc": "Pepperoni, capicola, mortadella, red onion, lettuce, tomato, pistachio mozzarella, n' tossed in Italian cream."
+        },
+        {
+          "item": "Holy Beef-Wich",
+          "price": "$15",
+          "desc": "Beef brisket, Mexican cheese, local poblano-cilantro cream, cabbage, n' pickled onions."
         },
         {
           "item": "1/4# All Beef Burnt End Wiener",
-          "desc": "This is NOT your average wiener. It's made of ground burnt ends and seared to juicy perfection."
+          "price": "$6",
+          "desc": "Plain."
         },
         {
-          "item": "The Top Shelf Burnt End Wiener",
-          "desc": "Stewed tomato jam topped with parmesan cream. You'll never think the same about your wien after biting into this bad boy!"
+          "item": "Top Shelf Burnt End Wiener",
+          "price": "$9",
+          "desc": "Topped with tomato jam n' parmesan cream."
         },
         {
-          "section": "Sides n' Stuff"
+          "section": "Other Goods"
         },
         {
-          "item": "Seasoned Shoe String Fries",
-          "desc": "Fried to golden perfection n' topped with Seth's pantry of seasonings."
+          "item": "Seasoned Shoestring Fries",
+          "price": "$4"
         },
         {
           "item": "Homemade Mac N' Cheese",
-          "desc": "Our mac n' cheese is ALWAYS made to order n' ALWAYS from scratch."
+          "price": "$6"
         },
         {
           "item": "Local Zuc-Cuc Salad",
-          "desc": "For our veggie lovin' friends - fresh zucchini - cucumber - horseradish salad. Who said veggies couldn't be fun?"
+          "price": "$7",
+          "desc": "Local zucchini n' cucumber, shallots, parsley, n' horseradish cream."
         },
         {
-          "section": "The Desserts"
+          "section": "Desserts"
         },
         {
-          "item": "Addie's Cupcakes for a Cause",
-          "desc": "Addie bakes from the heart n' from scratch. She donates $.50 from every cupcake sale to a local non-profit in our community! Today's flavor is Lemon-Raspberry."
+          "item": "Addie's Cupcake",
+          "price": "$3",
+          "desc": "Chocolate-peanut butter flavor."
         },
         {
-          "item": "Parker's Kookies for Kidneys",
-          "desc": "Parker was diagnosed with Chronic Kidney Disease at 4 and had a kidney transplant at 6. She bakes these cookies from scratch and donates $.50 from each cookie to the National Kidney Registry. Today's flavor is Moster Cookie."
+          "item": "Parker's Kookie",
+          "price": "$2",
+          "desc": "Monster flavor."
         },
         {
           "item": "Local Rhubarb Crisp",
-          "desc": "No one is sad it's rhubarb season! We pick this rhubarb fresh from our garden n' turn it into the perfect end of meal treat!"
+          "price": "$4"
         },
         {
           "item": "Homemade Ice Cream Cake",
-          "desc": "Crushed Oreo crust, homemade chocolate layer topped with creamy ice cream n' finished with more Oreos. Today's flavor is Chocolate Molten Ice Cream Cake."
+          "price": "$6",
+          "desc": "Chocolate lava cake flavor."
         },
         {
-          "item": "Gluten Free Oreo Ball Pops",
-          "desc": "Gluten free Oreos crushed n' folded with cream cheese, rolled into a ball, coated n' milk chocolate-butterscotch n' placed on a stick. Our girls' FAVORITE."
+          "item": "Gluten Free Oreo Pop",
+          "price": "$3"
         },
         {
           "item": "Homemade Sour Cream Ice Cream n' Peach Compote",
-          "desc": "You haven't lived until you've tried our homemade sour cream ice cream. It only gets better when topped with slow roasted peach compote. Summer on a spoon!"
+          "price": "$5"
+        },
+        {
+          "section": "Drinks"
+        },
+        {
+          "item": "Coke",
+          "price": "$2"
+        },
+        {
+          "item": "Diet Coke",
+          "price": "$2"
+        },
+        {
+          "item": "Sprite",
+          "price": "$2"
+        },
+        {
+          "item": "Water",
+          "price": "$2"
         }
       ]
     },
