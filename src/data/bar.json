@@ -1,3 +1,44 @@
 {
-  "vendor": "Take 16 Brewing Company (Luverne, MN)"
+  "vendor": "Take 16 Brewing Company (Luverne, MN)",
+  "sections": [
+    {
+      "name": "Craft Beer, Seltzer & Root Beer",
+      "subtitle": "Take 16 Brewing Co. · 16oz cans",
+      "items": [
+        { "item": "Country Mile Kölsch", "desc": "Light", "price": "$6" },
+        { "item": "Luverne Copper Lager", "desc": "Malty", "price": "$7" },
+        { "item": "Kick the Can IPA", "desc": "Hoppy", "price": "$7" },
+        { "item": "Luv Strawberry Seltzer", "price": "$6" },
+        { "item": "Citrus Seltzer", "price": "$6" },
+        { "item": "Rock River Root Beer", "price": "$3" }
+      ]
+    },
+    {
+      "name": "NA Beers",
+      "subtitle": "Deschutes Brewery · 12oz cans",
+      "items": [
+        { "item": "Super Stoked Golden", "price": "$6" },
+        { "item": "Black Butte Porter", "price": "$6" },
+        { "item": "Fresh Squeezed IPA", "price": "$6" }
+      ]
+    },
+    {
+      "name": "THC Seltzers",
+      "subtitle": "Trail Magic · 12oz cans",
+      "items": [
+        { "item": "Classic Iced Tea & Lemonade", "desc": "10 MG", "price": "$8" },
+        { "item": "Strawberry Iced Tea & Lemonade", "desc": "10 MG", "price": "$8" },
+        { "item": "Strawberry Iced Tea & Lemonade", "desc": "5 MG", "price": "$7" }
+      ]
+    },
+    {
+      "name": "Canned Wines",
+      "subtitle": "Archer Roose · 8.45oz cans",
+      "items": [
+        { "item": "Pinot Grigio", "price": "$8" },
+        { "item": "Sauvignon Blanc", "price": "$8" },
+        { "item": "Pinot Noir", "price": "$8" }
+      ]
+    }
+  ]
 }

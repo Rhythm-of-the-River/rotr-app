@@ -57,20 +57,21 @@ export interface ArtVendor {
   description: string;
 }
 
-export interface BarSelection {
-  name: string;
-  description?: string;
+export interface BarMenuItem {
+  item: string;
+  desc?: string;
+  price?: string;
 }
 
-export interface BarItem {
-  item: string;
-  price: string;
-  selection?: BarSelection[];
+export interface BarSection {
+  name: string;
+  subtitle?: string;
+  items: BarMenuItem[];
 }
 
 export interface BarData {
   vendor: string;
-  items?: BarItem[];
+  sections?: BarSection[];
 }
 
 export interface Announcement {
