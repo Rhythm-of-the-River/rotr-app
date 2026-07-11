@@ -3,38 +3,54 @@
     {
       "vendor": "Toro Bravo",
       "subtitle": "Authentic Mexican Food",
-      "note": "Prices will be posted at the festival.",
       "menu": [
         {
           "section": "Entrees"
         },
         {
           "item": "Tacos",
+          "price": "$12",
           "desc": "Choice of meat, choice of tortilla (flour or corn), onion, & cilantro."
         },
         {
           "item": "Quesadilla",
-          "desc": "Choice of meat & cheese, served with lettuce, tomato, onion, & sour cream."
+          "price": "$13",
+          "desc": "Choice of meat & cheese inside, served with rice and lettuce, cilantro, tomato, onion, & sour cream on the side."
         },
         {
           "item": "Burrito",
-          "desc": "Choice of meat, cheese, refried beans, rice, onion, tomato, lettuce, & sour cream."
+          "price": "$15",
+          "desc": "Choice of meat, cheese, beans, rice, onion, tomato, lettuce, & sour cream."
         },
         {
           "item": "Cheezy Burrito",
-          "desc": "Choice of meat, cheese, refried beans, rice, onion, tomato, lettuce, & queso dip."
+          "price": "$16",
+          "desc": "Choice of meat, cheese, refried beans, rice, onion, tomato, lettuce, & queso dip inside or outside."
         },
         {
           "item": "Torta",
+          "price": "$13",
           "desc": "Choice of meat, refried beans, mayo, lettuce, tomato, onion, & sour cream."
         },
         {
           "item": "Nachos",
+          "price": "$14",
           "desc": "Choice of meat, chips, nacho cheese, sour cream, tomato, & onion."
         },
         {
           "item": "Nachos Fries",
+          "price": "$16",
           "desc": "Choice of meat, French fries, nacho cheese, sour cream, tomato, & onion."
+        },
+        {
+          "item": "Taco Salad",
+          "price": "$12",
+          "desc": "Choice of meat, taco bowl, lettuce, tomato, onion, sour cream."
+        },
+        {
+          "item": "Birria Ramen",
+          "price": "$10",
+          "desc": "Ramen, birria meat, onion, cilantro, and mozzarella cheese."
         },
         {
           "section": "Choice of Meat"
@@ -43,53 +59,47 @@
           "item": "Steak / Carne Asada"
         },
         {
-          "item": "Marinated Pork / Al Pastor"
-        },
-        {
-          "item": "Mexican Sausage / Chorizo"
-        },
-        {
-          "item": "Carnitas"
+          "item": "Marinada Pork w/ Pineapple / Al Pastor"
         },
         {
           "item": "Birria"
         },
         {
+          "item": "Ground Beef / Carne Molida"
+        },
+        {
+          "item": "Campechana"
+        },
+        {
           "section": "Sides"
         },
         {
-          "item": "Rice / Arroz"
+          "item": "Taco",
+          "price": "$3.50"
         },
         {
-          "item": "Refried Beans / Frijoles Fritos"
+          "item": "Rice / Arroz",
+          "price": "$3"
         },
         {
-          "item": "Sour Cream / Crema"
+          "item": "Refried Beans / Frijoles Fritos",
+          "price": "$3"
         },
         {
-          "item": "Guacamole"
+          "item": "Sour Cream / Crema",
+          "price": "$1.50"
         },
         {
-          "item": "French Fries / Papas Fritas"
+          "item": "Guacamole",
+          "price": "$3"
         },
         {
-          "section": "Bebida / Drinks"
+          "item": "French Fries / Papas Fritas",
+          "price": "$4"
         },
         {
-          "item": "Mexican Cola (Half Liter) / Coca de Medio Litro"
-        },
-        {
-          "item": "Jarritos"
-        },
-        {
-          "item": "Gatorade"
-        },
-        {
-          "item": "Bottled Water / Botella de Agua"
-        },
-        {
-          "item": "Aguas Frescas",
-          "desc": "Fresh water flavors, available small (chica) or big (grande)."
+          "item": "Frozeen Mangonada",
+          "price": "$8"
         }
       ]
     },
