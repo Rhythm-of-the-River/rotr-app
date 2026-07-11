@@ -227,7 +227,7 @@
     },
     {
       "vendor": "The Elevated Cup",
-      "subtitle": "Cafe",
+      "subtitle": "Cafe featuring organic ingredients",
       "menu": [
         {
           "section": "Drinks"
@@ -276,7 +276,7 @@
           "section": "Bakery"
         },
         {
-          "item": "Bread",
+          "item": "Sourdough Bread",
           "desc": "Flavors: Blonde; Blueberry lemon; Jalapeño cheddar; Triple pepper jack (habanero, poblano, jalapeño); Shallot herb and feta.",
           "options": [
             {
@@ -288,6 +288,23 @@
               "price": "$10"
             }
           ]
+        },
+        {
+          "item": "Sourdough Cinnamon Rolls",
+          "options": [
+            {
+              "option": "1 roll",
+              "price": "$7"
+            },
+            {
+              "option": "2 rolls",
+              "price": "$12"
+            }
+          ]
+        },
+        {
+          "item": "Sourdough Bread Crumbs and Pancake Mix",
+          "price": "$8"
         },
         {
           "item": "Cookies",
