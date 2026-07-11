@@ -364,6 +364,9 @@
       "note": "Saturday only.",
       "menu": [
         {
+          "section": "Entrees"
+        },
+        {
           "item": "Chicken Pad Thai",
           "price": "$15"
         },
@@ -408,12 +411,23 @@
           "price": "$13"
         },
         {
-          "item": "Sticky Rice with Hot Sauce",
-          "price": "$6"
-        },
-        {
           "item": "Orange Chicken",
           "price": "$15"
+        },
+        {
+          "item": "Chicken Fried Rice",
+          "price": "$15"
+        },
+        {
+          "item": "Drunken Noodles",
+          "price": "$15"
+        },
+        {
+          "section": "Sides"
+        },
+        {
+          "item": "Sticky Rice with Hot Sauce",
+          "price": "$6"
         },
         {
           "item": "Shrimp in a Blanket",
@@ -436,12 +450,11 @@
           "price": "4 for $5"
         },
         {
-          "item": "Chicken Fried Rice",
-          "price": "$15"
+          "section": "Drinks"
         },
         {
-          "item": "Drunken Noodles",
-          "price": "$15"
+          "item": "Bubble Tea",
+          "price": "$5"
         }
       ]
     }
