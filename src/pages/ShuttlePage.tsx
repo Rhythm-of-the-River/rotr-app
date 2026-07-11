@@ -1,6 +1,4 @@
-import { BusFront, ExternalLink, MapPin } from 'lucide-react';
-
-const PARKING_URL = 'https://www.rhythmoftheriver.org/parking';
+import { BusFront, Phone } from 'lucide-react';
 
 export default function ShuttlePage() {
   return (
@@ -13,43 +11,41 @@ export default function ShuttlePage() {
           </h1>
         </div>
         <p className="text-river-200">
-          Leave your car at the off-site lot and ride the free shuttle to the festival.
+          Need a ride to Rhythm? We have a free shuttle within Jackson city limits!
         </p>
       </header>
 
       <section className="card space-y-5 p-5">
-        <div className="flex items-start gap-3">
-          <MapPin className="mt-1 shrink-0 text-sun-300" size={20} />
-          <div>
-            <h2 className="text-2xl text-sun-200">Where to catch it</h2>
-            <p className="mt-1 text-river-100">
-              Park at the Detroit Lakes High School parking lot. The shuttle will
-              take you from the lot to the festival entrance.
-            </p>
-          </div>
+        <div>
+          <h2 className="text-2xl text-sun-200">Need a ride?</h2>
+          <p className="mt-1 text-river-100">
+            Call{' '}
+            <a href="tel:+15078472632" className="text-sun-300 hover:text-sun-200">
+              (507) 847-2632
+            </a>
+            .
+          </p>
         </div>
 
-        <div className="grid gap-4 sm:grid-cols-2">
-          <div className="rounded-lg bg-river-800/60 p-4">
-            <h3 className="font-semibold text-river-50">Frequency</h3>
-            <p className="mt-1 text-river-200">Every 15–20 minutes during festival hours.</p>
-          </div>
-          <div className="rounded-lg bg-river-800/60 p-4">
-            <h3 className="font-semibold text-river-50">Cost</h3>
-            <p className="mt-1 text-river-200">The shuttle is free.</p>
-          </div>
+        <div>
+          <h2 className="text-2xl text-sun-200">Shuttle will run</h2>
+          <dl className="mt-3 space-y-3 text-river-100">
+            <div className="flex justify-between gap-4 border-b border-river-700/60 pb-3">
+              <dt className="font-semibold text-river-50">Friday</dt>
+              <dd>5:00 PM – 12:00 AM</dd>
+            </div>
+            <div className="flex justify-between gap-4">
+              <dt className="font-semibold text-river-50">Saturday</dt>
+              <dd>1:00 PM – 12:00 AM</dd>
+            </div>
+          </dl>
         </div>
+
+        <p className="flex items-start gap-2 border-t border-river-700/60 pt-4 text-river-100">
+          <Phone size={18} className="mt-0.5 shrink-0 text-sun-300" />
+          FREE shuttle is provided by Community Transit of UCAP.
+        </p>
       </section>
-
-      <a
-        href={PARKING_URL}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="btn-secondary"
-      >
-        <ExternalLink size={16} />
-        View parking details
-      </a>
     </div>
   );
 }
