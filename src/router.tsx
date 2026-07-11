@@ -1,6 +1,7 @@
 import { createBrowserRouter } from 'react-router-dom';
 import Layout from './components/Layout';
 import SchedulePage from './pages/SchedulePage';
+import ShuttlePage from './pages/ShuttlePage';
 import ActivitiesPage from './pages/ActivitiesPage';
 import FoodPage from './pages/FoodPage';
 import BarPage from './pages/BarPage';
@@ -15,6 +16,7 @@ export const router = createBrowserRouter([
     element: <Layout />,
     children: [
       { path: '/', element: <SchedulePage /> },
+      { path: '/shuttle', element: <ShuttlePage /> },
       { path: '/activities', element: <ActivitiesPage /> },
       { path: '/food', element: <FoodPage /> },
       { path: '/bar', element: <BarPage /> },
