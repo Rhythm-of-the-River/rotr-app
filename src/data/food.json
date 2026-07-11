@@ -276,6 +276,11 @@
           "section": "Bakery"
         },
         {
+          "item": "Crudité w/ fresh-made hummus",
+          "price": "$8",
+          "desc": "veggie plate"
+        },
+        {
           "item": "Sourdough Bread",
           "desc": "Flavors: Blonde; Blueberry lemon; Jalapeño cheddar; Triple pepper jack (habanero, poblano, jalapeño); Shallot herb and feta.",
           "options": [
