@@ -145,7 +145,7 @@
         },
         {
           "item": "Holy Beef-Wich",
-          "price": "$15",
+          "price": "$16",
           "desc": "Beef brisket, Mexican cheese, local poblano-cilantro cream, cabbage, n' pickled onions."
         },
         {
@@ -356,8 +356,89 @@
     {
       "vendor": "Lep's Take Me Out",
       "subtitle": "Lao/Thai Cuisine",
-      "note": "Saturday only. Menu to be announced.",
-      "menu": []
+      "note": "Saturday only.",
+      "menu": [
+        {
+          "item": "Chicken Pad Thai",
+          "price": "$15"
+        },
+        {
+          "item": "House Special Ramen",
+          "price": "$17"
+        },
+        {
+          "item": "House Special Red Chicken Curry",
+          "price": "$17"
+        },
+        {
+          "item": "Stir Fried Glass Noodles",
+          "price": "$15"
+        },
+        {
+          "item": "Stir Fried Ramen",
+          "price": "$15"
+        },
+        {
+          "item": "Beef Ginger",
+          "price": "$15"
+        },
+        {
+          "item": "Beef Teriyaki",
+          "price": "$15"
+        },
+        {
+          "item": "Beef & Broccoli",
+          "price": "$15"
+        },
+        {
+          "item": "Thai Chicken Basil",
+          "price": "$15"
+        },
+        {
+          "item": "Chicken Cashew",
+          "price": "$17"
+        },
+        {
+          "item": "Lao Fried Chicken with Sticky Rice & Hot Sauce",
+          "price": "$13"
+        },
+        {
+          "item": "Sticky Rice with Hot Sauce",
+          "price": "$6"
+        },
+        {
+          "item": "Orange Chicken",
+          "price": "$15"
+        },
+        {
+          "item": "Shrimp in a Blanket",
+          "price": "5 for $10"
+        },
+        {
+          "item": "Pork Eggrolls",
+          "price": "3 for $5"
+        },
+        {
+          "item": "Beef Jerky",
+          "price": "$15"
+        },
+        {
+          "item": "Chicken Skewer",
+          "price": "5 for $5"
+        },
+        {
+          "item": "Cream Cheese Wontons",
+          "price": "4 for $5"
+        },
+        {
+          "item": "Chicken Fried Rice",
+          "price": "$15"
+        },
+        {
+          "item": "Drunken Noodles",
+          "price": "$15"
+        }
+      ]
     }
   ]
 }
