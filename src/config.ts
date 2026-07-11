@@ -33,6 +33,7 @@ export interface NavLink {
 
 export const NAV_LINKS: NavLink[] = [
   { label: 'Schedule', to: '/' },
+  { label: 'Shuttle', to: '/shuttle' },
   { label: 'Activities', to: '/activities' },
   { label: 'Food', to: '/food' },
   { label: 'Bar', to: '/bar' },
@@ -51,4 +52,3 @@ export const NAV_LINKS: NavLink[] = [
     visibility: 'during-after'
   }
 ];
-
